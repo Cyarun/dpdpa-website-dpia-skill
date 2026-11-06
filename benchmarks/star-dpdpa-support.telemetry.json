@@ -1,0 +1,147 @@
+{
+  "slug": "star-dpdpa-support",
+  "sector": "B2B SaaS Portal",
+  "entity_label": "STAR Compliance Portal (B2B SaaS)",
+  "target_url": "https://star.dpdpa.support",
+  "canonical_domain": "star.dpdpa.support",
+  "evaluated_at_utc": "2026-11-06T08:34:01.795Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://star.dpdpa.support/",
+    "response_time_ms": 947,
+    "html_bytes": 67923,
+    "security_headers": {
+      "strict_transport_security": "max-age=31536000; includeSubDomains",
+      "content_security_policy": "default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; form-action 'none'; frame-ancestors 'none'; base-uri 'none'; manifest-src 'none'",
+      "x_frame_options": "DENY",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": "strict-origin-when-cross-origin",
+      "permissions_policy": "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+      "server": "cloudflare",
+      "cf_ray": "a562c1bbbc77df75-MRS",
+      "x_cache": null
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 0,
+    "first_party_count": 0,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 0,
+    "cookies": []
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 5,
+    "script_urls": [
+      "https://star.dpdpa.support/assets/js/boot.dda80742.js",
+      "https://star.dpdpa.support/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "https://star.dpdpa.support/assets/js/home.d532c2bb.js",
+      "https://star.dpdpa.support/assets/js/ask.39ff161e.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    ],
+    "third_party_domains_count": 1,
+    "third_party_domains": [
+      {
+        "domain": "static.cloudflareinsights.com",
+        "asset_count": 1,
+        "sample_url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 2,
+    "marketing_and_crm_automations": [],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Response Header match: google-analytics.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      },
+      {
+        "vendor_name": "Cloudflare Web Analytics / Insights",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "Script URL: https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Provides edge bot mitigation and aggregate performance telemetry under Section 8(5) reasonable security safeguards.",
+        "advisory_governance_action": "Document edge security cookies and telemetry in the Section 5 / Rule 3 itemised privacy notice."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": []
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [],
+    "has_reject_or_manage_option_in_dom": true,
+    "forms_inspected_count": 0,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": true
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 19,
+    "privacy_notice_links": [
+      {
+        "url": "https://star.dpdpa.support/security.html",
+        "label": "Security"
+      },
+      {
+        "url": "https://star.dpdpa.support/",
+        "label": "Privacy / Legal Link"
+      },
+      {
+        "url": "https://star.dpdpa.support/#anatomy",
+        "label": "How it is built"
+      },
+      {
+        "url": "https://star.dpdpa.support/why/",
+        "label": "Why DPDP Star"
+      },
+      {
+        "url": "https://star.dpdpa.support/#how",
+        "label": "How it works"
+      },
+      {
+        "url": "https://star.dpdpa.support/pricing/",
+        "label": "Pricing"
+      },
+      {
+        "url": "https://star.dpdpa.support/register/",
+        "label": "Request early access"
+      },
+      {
+        "url": "https://star.dpdpa.support/login",
+        "label": "Sign in"
+      },
+      {
+        "url": "https://docs.star.dpdpa.support/wix/",
+        "label": "Wix (Live)"
+      },
+      {
+        "url": "https://docs.star.dpdpa.support/onboarding/",
+        "label": "WordPress &amp; WooCommerce"
+      }
+    ],
+    "grievance_links_count": 0,
+    "grievance_links": [],
+    "privacy_policy_passive_check": {
+      "inspected_url": "https://star.dpdpa.support/",
+      "status": 200,
+      "grievance_officer_mentioned": true,
+      "dpo_contact_mentioned": true,
+      "ninety_day_sla_mentioned": true,
+      "retention_mentioned": true,
+      "cross_border_mentioned": false,
+      "children_data_mentioned": true
+    }
+  }
+}

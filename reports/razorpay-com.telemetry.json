@@ -1,0 +1,166 @@
+{
+  "captured_at_utc": "2026-11-06T08:35:42.979Z",
+  "collection_method": "node-passive-http-dom-inspector",
+  "target_url": "https://razorpay.com/",
+  "canonical_domain": "razorpay.com",
+  "http_security_headers": {},
+  "storage_and_cookies": {
+    "cookies": [],
+    "local_storage_keys": [],
+    "session_storage_keys": [],
+    "indexeddb_databases": [],
+    "service_workers_registered": []
+  },
+  "automations_and_profiling": {
+    "total_detected": 4,
+    "detected_automations": [
+      {
+        "vendor_name": "Segment Customer Data Platform (analytics.js)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "cdn.segment.com/analytics.js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Acts as a central fan-out router forwarding personal data and behavioural events to multiple downstream sub-processors.",
+        "advisory_governance_action": "Enforce category-based destination filtering in Segment (`consent-manager`) and disclose downstream recipients under Rule 3."
+      },
+      {
+        "vendor_name": "Google Tag Manager (gtm.js)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "dataLayer",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Dynamically injects third-party tracking scripts, pixels, and event listeners into the client DOM.",
+        "advisory_governance_action": "Enable Google Consent Mode v2 (`ad_storage: \"denied\"`, `analytics_storage: \"denied\"`, `ad_user_data: \"denied\"`, `ad_personalization: \"denied\"` by default) prior to GTM initialization."
+      },
+      {
+        "vendor_name": "Microsoft Clarity Session Replay",
+        "automation_category": "Session Replay & Behavioral Heatmap",
+        "matched_signal": "clarity.ms/tag",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Records full DOM mutations, mouse movements, scroll depth, and rage clicks (high Rule 13(2) behavioural profiling sensitivity if unmasked).",
+        "advisory_governance_action": "Require explicit analytics consent before loading Clarity (`window.clarity(\"consent\")`) and enforce strict DOM input masking (`data-clarity-mask=\"true\"`)."
+      },
+      {
+        "vendor_name": "Google Analytics 4 / Google Ads / Floodlight (gtag.js)",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "googletagmanager.com/gtag/js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Cross-site measurement, conversion attribution, and audience remarketing.",
+        "advisory_governance_action": "Implement Google Consent Mode v2 with default `denied` state and enable IP anonymization / redacted URL parameters."
+      }
+    ],
+    "form_signals": {
+      "forms_inspected_count": 0,
+      "pre_ticked_checkboxes_count": 0,
+      "bundled_consent_forms_count": 0,
+      "unencrypted_or_insecure_form_actions": [],
+      "early_field_capture_listeners_detected": false,
+      "observations": [
+        "Inspected 0 HTML form container(s) and detected 0 pre-selected checkbox(es).",
+        "No pre-submission keystroke/field exfiltration listeners detected in inspected scripts."
+      ]
+    },
+    "fingerprinting_signals": {
+      "web_push_permission_requested_on_load": false,
+      "canvas_or_webgl_fingerprint_signals": false,
+      "navigator_beacon_or_fetch_keepalive_observed": true,
+      "details": [
+        "Web Push on-load prompt: Not observed",
+        "Canvas/Audio fingerprinting signatures: Not observed",
+        "Navigator sendBeacon telemetry: Observed"
+      ]
+    }
+  },
+  "dom_privacy_and_cmp_signals": {
+    "links_count": 425,
+    "buttons_count": 123,
+    "forms_count": 0
+  },
+  "network_and_third_party": {
+    "third_party_domains": [
+      {
+        "domain": "www.googletagmanager.com",
+        "vendor": "Google Analytics 4 / Google Ads / Floodlight (gtag.js)",
+        "category": "Ad Pixel / Auto-Advanced Matching / Retargeting"
+      },
+      {
+        "domain": "events.framer.com",
+        "vendor": "External Web Sub-Processor / CDN",
+        "category": "External Asset / Script Host"
+      },
+      {
+        "domain": "framerusercontent.com",
+        "vendor": "External Web Sub-Processor / CDN",
+        "category": "External Asset / Script Host"
+      }
+    ]
+  },
+  "cookies": [],
+  "local_storage_keys": [],
+  "session_storage_keys": [],
+  "indexeddb_databases": [],
+  "service_workers_registered": [],
+  "automations": [
+    {
+      "vendor_name": "Segment Customer Data Platform (analytics.js)",
+      "automation_category": "CDP & Event Routing",
+      "matched_signal": "cdn.segment.com/analytics.js",
+      "loaded_before_consent": true,
+      "rule13_2_profiling_or_automated_risk_relevance": "Acts as a central fan-out router forwarding personal data and behavioural events to multiple downstream sub-processors.",
+      "advisory_governance_action": "Enforce category-based destination filtering in Segment (`consent-manager`) and disclose downstream recipients under Rule 3."
+    },
+    {
+      "vendor_name": "Google Tag Manager (gtm.js)",
+      "automation_category": "CDP & Event Routing",
+      "matched_signal": "dataLayer",
+      "loaded_before_consent": true,
+      "rule13_2_profiling_or_automated_risk_relevance": "Dynamically injects third-party tracking scripts, pixels, and event listeners into the client DOM.",
+      "advisory_governance_action": "Enable Google Consent Mode v2 (`ad_storage: \"denied\"`, `analytics_storage: \"denied\"`, `ad_user_data: \"denied\"`, `ad_personalization: \"denied\"` by default) prior to GTM initialization."
+    },
+    {
+      "vendor_name": "Microsoft Clarity Session Replay",
+      "automation_category": "Session Replay & Behavioral Heatmap",
+      "matched_signal": "clarity.ms/tag",
+      "loaded_before_consent": true,
+      "rule13_2_profiling_or_automated_risk_relevance": "Records full DOM mutations, mouse movements, scroll depth, and rage clicks (high Rule 13(2) behavioural profiling sensitivity if unmasked).",
+      "advisory_governance_action": "Require explicit analytics consent before loading Clarity (`window.clarity(\"consent\")`) and enforce strict DOM input masking (`data-clarity-mask=\"true\"`)."
+    },
+    {
+      "vendor_name": "Google Analytics 4 / Google Ads / Floodlight (gtag.js)",
+      "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+      "matched_signal": "googletagmanager.com/gtag/js",
+      "loaded_before_consent": true,
+      "rule13_2_profiling_or_automated_risk_relevance": "Cross-site measurement, conversion attribution, and audience remarketing.",
+      "advisory_governance_action": "Implement Google Consent Mode v2 with default `denied` state and enable IP anonymization / redacted URL parameters."
+    }
+  ],
+  "subprocessors": [
+    {
+      "third_party_domain": "www.googletagmanager.com",
+      "vendor_or_service_name": "Google Analytics 4 / Google Ads / Floodlight (gtag.js)",
+      "category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+      "estimated_primary_jurisdiction": "United States / Global Cloud",
+      "fired_before_consent": true,
+      "dpdpa_governance_recommendation": "Implement Google Consent Mode v2 with default `denied` state and enable IP anonymization / redacted URL parameters."
+    },
+    {
+      "third_party_domain": "events.framer.com",
+      "vendor_or_service_name": "External Web Sub-Processor / CDN",
+      "category": "External Asset / Script Host",
+      "estimated_primary_jurisdiction": "Cross-Border / Global Cloud (Verify under Rule 15)",
+      "fired_before_consent": true,
+      "dpdpa_governance_recommendation": "Verify Data Processing Agreement (Section 8(2)), Sub-Processor inventory disclosure (Rule 3), and Subresource Integrity (Rule 6)."
+    },
+    {
+      "third_party_domain": "framerusercontent.com",
+      "vendor_or_service_name": "External Web Sub-Processor / CDN",
+      "category": "External Asset / Script Host",
+      "estimated_primary_jurisdiction": "Cross-Border / Global Cloud (Verify under Rule 15)",
+      "fired_before_consent": true,
+      "dpdpa_governance_recommendation": "Verify Data Processing Agreement (Section 8(2)), Sub-Processor inventory disclosure (Rule 3), and Subresource Integrity (Rule 6)."
+    }
+  ],
+  "third_party_domains": [
+    "www.googletagmanager.com",
+    "events.framer.com",
+    "framerusercontent.com"
+  ]
+}

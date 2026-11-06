@@ -1,0 +1,144 @@
+{
+  "slug": "zerodha",
+  "sector": "Financial Services / Broking",
+  "entity_label": "Zerodha (Financial Services & Broking)",
+  "target_url": "https://zerodha.com",
+  "canonical_domain": "zerodha.com",
+  "evaluated_at_utc": "2026-11-06T08:34:06.374Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://zerodha.com/",
+    "response_time_ms": 217,
+    "html_bytes": 30858,
+    "security_headers": {
+      "strict_transport_security": "max-age=15552000",
+      "content_security_policy": null,
+      "x_frame_options": "DENY",
+      "x_content_type_options": null,
+      "referrer_policy": null,
+      "permissions_policy": "interest-cohort=()",
+      "server": "cloudflare",
+      "cf_ray": "a562c1d69c4b7ef8-MAA",
+      "x_cache": null
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 2,
+    "first_party_count": 2,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 0,
+    "cookies": [
+      {
+        "name": "__cf_bm",
+        "domain": "zerodha.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "None",
+        "expiry_days": 0,
+        "set_before_consent": true
+      },
+      {
+        "name": "_cfuvid",
+        "domain": "zerodha.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "None",
+        "expiry_days": 0,
+        "set_before_consent": true
+      }
+    ]
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 6,
+    "script_urls": [
+      "https://zerodha.com/static/js/navbar.js",
+      "https://zerodha.com/static/js/tinytabs.min.js",
+      "https://zerodha.com/static/js/tooltip.js",
+      "https://zerodha.com/zerodha.referral.js",
+      "https://rb.zerodha.com/api/script.js",
+      "https://zerodha.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ],
+    "third_party_domains_count": 1,
+    "third_party_domains": [
+      {
+        "domain": "fonts.googleapis.com",
+        "asset_count": 1,
+        "sample_url": "https://fonts.googleapis.com/css?family=Inter:400,500"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 1,
+    "marketing_and_crm_automations": [],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Cloudflare Web Analytics / Insights",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Set-Cookie: __cf_bm (domain: zerodha.com)",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Provides edge bot mitigation and aggregate performance telemetry under Section 8(5) reasonable security safeguards.",
+        "advisory_governance_action": "Document edge security cookies and telemetry in the Section 5 / Rule 3 itemised privacy notice."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": []
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [],
+    "has_reject_or_manage_option_in_dom": false,
+    "forms_inspected_count": 0,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": false
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 2,
+    "privacy_notice_links": [
+      {
+        "url": "https://zerodha.com/terms-and-conditions/",
+        "label": "Terms &amp; conditions"
+      },
+      {
+        "url": "https://zerodha.com/privacy-policy/",
+        "label": "Privacy policy"
+      }
+    ],
+    "grievance_links_count": 3,
+    "grievance_links": [
+      {
+        "url": "https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/track-complaints-or-tickets",
+        "label": "Status of your complaints"
+      },
+      {
+        "url": "https://smartodr.in/",
+        "label": "Smart Online Dispute Resolution"
+      },
+      {
+        "url": "https://zerodha-common.s3.ap-south-1.amazonaws.com/Downloads-and-resources/Smart%20ODR%20info.pdf",
+        "label": "Grievances Redressal Mechanism"
+      }
+    ],
+    "privacy_policy_passive_check": {
+      "inspected_url": "https://zerodha.com/privacy-policy/",
+      "status": 200,
+      "grievance_officer_mentioned": true,
+      "dpo_contact_mentioned": true,
+      "ninety_day_sla_mentioned": false,
+      "retention_mentioned": false,
+      "cross_border_mentioned": false,
+      "children_data_mentioned": true
+    }
+  }
+}

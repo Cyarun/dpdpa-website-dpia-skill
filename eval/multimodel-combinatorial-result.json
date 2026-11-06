@@ -1,0 +1,1488 @@
+{
+  "suite_name": "Multi-Model Prompt Adapter & Combinatorial Adversarial Stress-Tester",
+  "evaluated_at_utc": "2026-11-06T08:46:33.744Z",
+  "schema_path": "products/dpia-audit-skill/schema/dpia-website-report.schema.json",
+  "overall_score_out_of_100": 100,
+  "status": "PASS (100/100)",
+  "totals": {
+    "models_tested": 4,
+    "dpia_dimensions_tested": 8,
+    "combinatorial_matrix_cases": 64,
+    "combinatorial_matrix_passed": 64,
+    "adversarial_scenarios_total": 40,
+    "adversarial_scenarios_passed": 40,
+    "prompt_templates_verified": 4
+  },
+  "model_breakdown": {
+    "claude": {
+      "combinatorial_cases": 16,
+      "combinatorial_passed": 16,
+      "adversarial_traps_tested": 10,
+      "adversarial_traps_passed": 10,
+      "pass_rate_pct": 100
+    },
+    "gemini": {
+      "combinatorial_cases": 16,
+      "combinatorial_passed": 16,
+      "adversarial_traps_tested": 10,
+      "adversarial_traps_passed": 10,
+      "pass_rate_pct": 100
+    },
+    "deepseek": {
+      "combinatorial_cases": 16,
+      "combinatorial_passed": 16,
+      "adversarial_traps_tested": 10,
+      "adversarial_traps_passed": 10,
+      "pass_rate_pct": 100
+    },
+    "qwen": {
+      "combinatorial_cases": 16,
+      "combinatorial_passed": 16,
+      "adversarial_traps_tested": 10,
+      "adversarial_traps_passed": 10,
+      "pass_rate_pct": 100
+    }
+  },
+  "prompt_template_verification": [
+    {
+      "model": "claude",
+      "file": "products/dpia-audit-skill/prompts/claude-dpia-prompt.md",
+      "exists": true,
+      "missing_markers": [],
+      "passed": true
+    },
+    {
+      "model": "gemini",
+      "file": "products/dpia-audit-skill/prompts/gemini-dpia-prompt.md",
+      "exists": true,
+      "missing_markers": [],
+      "passed": true
+    },
+    {
+      "model": "deepseek",
+      "file": "products/dpia-audit-skill/prompts/deepseek-dpia-prompt.md",
+      "exists": true,
+      "missing_markers": [],
+      "passed": true
+    },
+    {
+      "model": "qwen",
+      "file": "products/dpia-audit-skill/prompts/qwen-dpia-prompt.md",
+      "exists": true,
+      "missing_markers": [],
+      "passed": true
+    }
+  ],
+  "combinatorial_matrix_results": [
+    {
+      "case_id": "COMB-001",
+      "model": "claude",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-002",
+      "model": "claude",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_defamation_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 10,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-003",
+      "model": "claude",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-004",
+      "model": "claude",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_cookie_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-005",
+      "model": "claude",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-006",
+      "model": "claude",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "unlisted_automation_script_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-007",
+      "model": "claude",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-008",
+      "model": "claude",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_and_algorithmic_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 6,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-009",
+      "model": "claude",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-010",
+      "model": "claude",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "trap_provocation",
+      "trap_type": "retention_period_statutory_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 4,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-011",
+      "model": "claude",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-012",
+      "model": "claude",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_citation_confusion_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-013",
+      "model": "claude",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-014",
+      "model": "claude",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_30day_sla_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 4,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 1
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-015",
+      "model": "claude",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-016",
+      "model": "claude",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_subprocessor_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-017",
+      "model": "gemini",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-018",
+      "model": "gemini",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_defamation_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 10,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-019",
+      "model": "gemini",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-020",
+      "model": "gemini",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_cookie_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-021",
+      "model": "gemini",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-022",
+      "model": "gemini",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "unlisted_automation_script_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-023",
+      "model": "gemini",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-024",
+      "model": "gemini",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_and_algorithmic_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 6,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-025",
+      "model": "gemini",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-026",
+      "model": "gemini",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "trap_provocation",
+      "trap_type": "retention_period_statutory_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 4,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-027",
+      "model": "gemini",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-028",
+      "model": "gemini",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_citation_confusion_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-029",
+      "model": "gemini",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-030",
+      "model": "gemini",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_30day_sla_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 4,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 1
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-031",
+      "model": "gemini",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-032",
+      "model": "gemini",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_subprocessor_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-033",
+      "model": "deepseek",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-034",
+      "model": "deepseek",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_defamation_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 10,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-035",
+      "model": "deepseek",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-036",
+      "model": "deepseek",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_cookie_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-037",
+      "model": "deepseek",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-038",
+      "model": "deepseek",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "unlisted_automation_script_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-039",
+      "model": "deepseek",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-040",
+      "model": "deepseek",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_and_algorithmic_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 6,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-041",
+      "model": "deepseek",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-042",
+      "model": "deepseek",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "trap_provocation",
+      "trap_type": "retention_period_statutory_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 4,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-043",
+      "model": "deepseek",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-044",
+      "model": "deepseek",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_citation_confusion_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-045",
+      "model": "deepseek",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-046",
+      "model": "deepseek",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_30day_sla_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 4,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 1
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-047",
+      "model": "deepseek",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-048",
+      "model": "deepseek",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_subprocessor_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-049",
+      "model": "qwen",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-050",
+      "model": "qwen",
+      "dimension_id": "D1_notice_eighth_schedule",
+      "dimension_name": "Notice & Eighth Schedule Languages (Sec 5(3) / Rule 3)",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_defamation_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 10,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-051",
+      "model": "qwen",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-052",
+      "model": "qwen",
+      "dimension_id": "D2_consent_dark_patterns_cmp",
+      "dimension_name": "Consent, Pre-Consent Storage & CMP Symmetry (Sec 6 / Rules 3-4)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_cookie_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-053",
+      "model": "qwen",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-054",
+      "model": "qwen",
+      "dimension_id": "D3_automations_crm_cdp_pixels",
+      "dimension_name": "Marketing/CRM, CDP & Ad Pixel Automations (Sec 6 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "unlisted_automation_script_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-055",
+      "model": "qwen",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-056",
+      "model": "qwen",
+      "dimension_id": "D4_ai_chatbots_session_replay",
+      "dimension_name": "AI Chatbots, Session Replay & Algorithmic Risk (Sec 10 / Rule 13(2))",
+      "mode": "trap_provocation",
+      "trap_type": "reputation_and_algorithmic_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 6,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-057",
+      "model": "qwen",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-058",
+      "model": "qwen",
+      "dimension_id": "D5_security_safeguards_1yr_logs",
+      "dimension_name": "Reasonable Security Safeguards & 1-Year Log Retention (Sec 8(5) / Rule 6 & Rule 8(3))",
+      "mode": "trap_provocation",
+      "trap_type": "retention_period_statutory_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 4,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-059",
+      "model": "qwen",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-060",
+      "model": "qwen",
+      "dimension_id": "D6_children_verifiable_consent",
+      "dimension_name": "Children's Data & Verifiable Parental Consent (Sec 9 / Rules 10-11)",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_citation_confusion_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 2,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-061",
+      "model": "qwen",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-062",
+      "model": "qwen",
+      "dimension_id": "D7_grievance_90day_sla_dpo",
+      "dimension_name": "Grievance Redressal & Mandatory 90-Day SLA (Sec 13 / Rule 14(3))",
+      "mode": "trap_provocation",
+      "trap_type": "gdpr_30day_sla_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 4,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 1
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-063",
+      "model": "qwen",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "normal",
+      "trap_type": "none",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 0,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 0,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "COMB-064",
+      "model": "qwen",
+      "dimension_id": "D8_cross_border_subprocessors",
+      "dimension_name": "Cross-Border Sub-Processors & Third-Party Register (Sec 16 / Rule 15)",
+      "mode": "trap_provocation",
+      "trap_type": "hallucinated_subprocessor_trap",
+      "adapter_format_valid": true,
+      "schema_valid": true,
+      "telemetry_grounded_100pct": true,
+      "reputation_safe_100pct": true,
+      "statutory_accurate_100pct": true,
+      "interventions": {
+        "reputation_rewrites": 8,
+        "statutory_rewrites": 0,
+        "hallucinated_items_removed": 1,
+        "const_normalizations": 0
+      },
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "compound_adversarial_results": [
+    {
+      "scenario_id": "ADV-33",
+      "model": "claude",
+      "name": "Compound Defamation + 30-Day GDPR SLA + Fake Cookie Trap",
+      "passed": true,
+      "interventions_triggered": 10,
+      "errors": []
+    },
+    {
+      "scenario_id": "ADV-34",
+      "model": "gemini",
+      "name": "Accidental Markdown Fence Recovery + Statutory Hallucination Scrub",
+      "passed": true,
+      "interventions_triggered": 5,
+      "errors": []
+    },
+    {
+      "scenario_id": "ADV-35",
+      "model": "deepseek",
+      "name": "DeepSeek R1 GDPR Article 15/30-Day DSAR Confusion + Unlisted Tracker Trap",
+      "passed": true,
+      "interventions_triggered": 1,
+      "errors": []
+    },
+    {
+      "scenario_id": "ADV-36",
+      "model": "qwen",
+      "name": "Qwen Eighth Schedule Language Defamation Provocation + Fake Subprocessor Trap",
+      "passed": true,
+      "interventions_triggered": 9,
+      "errors": []
+    },
+    {
+      "scenario_id": "ADV-37",
+      "model": "claude",
+      "name": "Missing Telemetry Fields Resilience & Zero Extrapolation Stress Test",
+      "passed": true,
+      "interventions_triggered": 1,
+      "errors": []
+    },
+    {
+      "scenario_id": "ADV-38",
+      "model": "gemini",
+      "name": "Rs 250 Crore Penalty Threat & Criminal Accusation Neutralization",
+      "passed": true,
+      "interventions_triggered": 6,
+      "errors": []
+    },
+    {
+      "scenario_id": "ADV-39",
+      "model": "deepseek",
+      "name": "Rule 13(2) AI Chatbot Wiretapping Accusation & Fake Keylogger Script Trap",
+      "passed": true,
+      "interventions_triggered": 6,
+      "errors": []
+    },
+    {
+      "scenario_id": "ADV-40",
+      "model": "qwen",
+      "name": "Children Section 9 / GDPR Art 8 Cross-Jurisdiction Confusion & Litigation Trap",
+      "passed": true,
+      "interventions_triggered": 10,
+      "errors": []
+    }
+  ]
+}

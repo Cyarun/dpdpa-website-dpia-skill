@@ -1,0 +1,142 @@
+{
+  "slug": "zoho",
+  "sector": "Enterprise SaaS",
+  "entity_label": "Zoho Corporation (Enterprise Cloud SaaS)",
+  "target_url": "https://www.zoho.com",
+  "canonical_domain": "www.zoho.com",
+  "evaluated_at_utc": "2026-11-06T08:34:05.453Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://www.zoho.com/",
+    "response_time_ms": 596,
+    "html_bytes": 17900,
+    "security_headers": {
+      "strict_transport_security": "max-age=64072000; includeSubDomains; preload",
+      "content_security_policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohoapis.in https://*.zohoflow.com https://*.zohocorppublic.in https://*.zohostatic.jp https://*.zohopublic.jp https://maillist-manage.com https://www.buzzsprout.com https://*.nimbuspop.com https://*.zoho.com https://*.google.com https://cdnjs.cloudflare.com https://platform.twitter.com https://player.vimeo.com https://*.maillist-manage.com https://*.manageengine.com https://*.pagesense.io https://*.zapier.com https://*.zoho.com.au https://*.zoho.eu https://*.zoho.in https://*.zoho.jp https://*.zoho.sa https://*.zohocdn.com https://*.zohocloud.ca https://*.zohostatic.com https://*.zohowebstatic.com https://cdn.ampproject.org https://cdn.checkhq.com https://fast.wistia.com https://run.pstmn.io https://www.youtube.com https://www.youtube-nocookie.com https://*.zoho.ae https://*.zohopublic.com https://*.zohopublic.in https://*.zohopublic.eu https://*.zohosalesiq.com https://*.zohocorp.com https://*.zohoexternal.in https://*.zohoexternal.com https://*.zoho.uk https://*.catalystserverless.in https://*.catalystserverless.com https://*.zohobookings.com https://*.zohobookings.eu https://*.zohobookings.in https://*.zohocdn.com.cn https://*.scoreapp.com https://*.jsdelivr.net https://*.maillist-manage.in https://*.gstatic.com https://*.zoho.sg;connect-src 'self' blob: wss://*.elevenlabs.io wss://*.rtc.elevenlabs.io https://*.elevenlabs.io https://esm.sh https://*.catalystserverless.jp https://*.development.catalystappsail.in https://*.zohorecruit.in https://*.zohorecruit.eu https://*.zoho.sg https://*.zohopublic.jp https://*.zohostratus.com https://*.zoho.in https://*.zoho.com https://*.zoho.com.au https://*.zoho.eu https://*.zoho.jp https://*.zohocloud.ca https://*.zoho.uk https://*.zoho.sa https://*.zoho.ae https://*.zohosalesiq.com https://*.zohocorp.com https://*.zohoexternal.in https://*.zohoexternal.com  https://*.zohostatic.com https://*.wistia.com https://*.maillist-manage.com https://*.maillist-manage.in https://*.maillist-manage.eu https://*.catalystserverless.in https://*.catalystserverless.com https://*.zapier.com https://api.github.com https://player.vimeo.com https://twitter.com https://*.zohocdn.com https://*.zohopublic.com https://*.zohopublic.in wss://*.zohopublic.jp wss://*.zohopublic.in wss://*.zohopublic.eu wss://vts.zohopublic.com https://*.zohowebstatic.com  https://*.zohobookings.com https://*.zohobookings.eu https://*.zohobookings.in https://*.zohocdn.com.cn https://*.zohopublic.eu https://*.scoreapp.com https://*.cdn.pagesense.io https://*.zohoportal.in https://*.cdn-in.pagesense.io https://*.jsdelivr.net;",
+      "x_frame_options": null,
+      "x_content_type_options": "nosniff",
+      "referrer_policy": null,
+      "permissions_policy": null,
+      "server": "cloudflare",
+      "cf_ray": "a562c1d19bc087fe-HYD",
+      "x_cache": null
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 2,
+    "first_party_count": 2,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 0,
+    "cookies": [
+      {
+        "name": "zip",
+        "domain": "www.zoho.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": true,
+        "same_site": "Strict",
+        "expiry_days": 1,
+        "set_before_consent": true
+      },
+      {
+        "name": "__cf_bm",
+        "domain": "zoho.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "None",
+        "expiry_days": 0,
+        "set_before_consent": true
+      }
+    ]
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 7,
+    "script_urls": [
+      "https://www.zohowebstatic.com/sites/zweb/js/common/var_init.js",
+      "https://www.zohowebstatic.com/sites/zweb/js/ztm/zoho.js",
+      "https://www.zohowebstatic.com/sites/zweb/js/common/zcms.js",
+      "https://www.zohowebstatic.com/sites/zweb/js/common/slick-plugin.js",
+      "https://www.zohowebstatic.com/sites/zweb/js/common/zohocustom.js",
+      "https://www.zohowebstatic.com/sites/zweb/js/product/zoho_general_pages.js",
+      "https://www.zohowebstatic.com/sites/zweb/js/translation/zoho_general_pages/41687.js"
+    ],
+    "third_party_domains_count": 2,
+    "third_party_domains": [
+      {
+        "domain": "www.zohowebstatic.com",
+        "asset_count": 12,
+        "sample_url": "https://www.zohowebstatic.com/sites/zweb/js/common/var_init.js"
+      },
+      {
+        "domain": "static.zohocdn.com",
+        "asset_count": 5,
+        "sample_url": "https://static.zohocdn.com/"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 2,
+    "marketing_and_crm_automations": [
+      {
+        "vendor_name": "Zoho PageSense / Zoho Marketing Automation / Zoho SalesIQ",
+        "automation_category": "Marketing & CRM Automation",
+        "matched_signal": "HTTP Response Header match: pagesense.io",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Provides visitor engagement tracking, conversion optimization, and live support routing.",
+        "advisory_governance_action": "Synchronize Zoho engagement scripts with explicit banner consent categories and maintain clear purpose descriptions in the privacy notice."
+      }
+    ],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Cloudflare Web Analytics / Insights",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Set-Cookie: __cf_bm (domain: zoho.com)",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Provides edge bot mitigation and aggregate performance telemetry under Section 8(5) reasonable security safeguards.",
+        "advisory_governance_action": "Document edge security cookies and telemetry in the Section 5 / Rule 3 itemised privacy notice."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": []
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [],
+    "has_reject_or_manage_option_in_dom": false,
+    "forms_inspected_count": 0,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": false
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 1,
+    "privacy_notice_links": [
+      {
+        "url": "https://www.zoho.com/privacy-commitment.html?src=zindex",
+        "label": "values your privacy"
+      }
+    ],
+    "grievance_links_count": 0,
+    "grievance_links": [],
+    "privacy_policy_passive_check": {
+      "inspected_url": "https://www.zoho.com/privacy-commitment.html?src=zindex",
+      "status": 200,
+      "grievance_officer_mentioned": false,
+      "dpo_contact_mentioned": false,
+      "ninety_day_sla_mentioned": false,
+      "retention_mentioned": false,
+      "cross_border_mentioned": false,
+      "children_data_mentioned": false
+    }
+  }
+}

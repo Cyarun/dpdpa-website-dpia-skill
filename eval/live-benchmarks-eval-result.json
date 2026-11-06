@@ -1,0 +1,192 @@
+{
+  "suite": "Live Multi-Sector Indian Website Passive DPIA Benchmark Suite (8 Websites)",
+  "evaluated_at_utc": "2026-11-06T08:46:34.118Z",
+  "total_sites_evaluated": 8,
+  "overall_eval_score_100": 100,
+  "all_sites_passed_100_percent": true,
+  "rubric_weights": {
+    "evidence_grounding": 20,
+    "zero_hallucinations": 20,
+    "automation_detection": 20,
+    "statutory_mapping": 20,
+    "reputation_safe_tone": 20
+  },
+  "site_evaluations": [
+    {
+      "slug": "dpdpa-support",
+      "url": "https://dpdpa.support",
+      "sector": "LegalTech / Compliance",
+      "http_status": 200,
+      "cookies_observed": 0,
+      "external_scripts_observed": 6,
+      "third_party_domains_observed": 1,
+      "automations_detected": 3,
+      "dpia_readiness_score": 98,
+      "readiness_posture": "High Readiness (Aligned)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "slug": "star-dpdpa-support",
+      "url": "https://star.dpdpa.support",
+      "sector": "B2B SaaS Portal",
+      "http_status": 200,
+      "cookies_observed": 0,
+      "external_scripts_observed": 5,
+      "third_party_domains_observed": 1,
+      "automations_detected": 2,
+      "dpia_readiness_score": 95,
+      "readiness_posture": "High Readiness (Aligned)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "slug": "razorpay",
+      "url": "https://razorpay.com",
+      "sector": "Fintech / Payments",
+      "http_status": 200,
+      "cookies_observed": 6,
+      "external_scripts_observed": 5,
+      "third_party_domains_observed": 8,
+      "automations_detected": 4,
+      "dpia_readiness_score": 87,
+      "readiness_posture": "High Readiness (Aligned)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "slug": "zoho",
+      "url": "https://www.zoho.com",
+      "sector": "Enterprise SaaS",
+      "http_status": 200,
+      "cookies_observed": 2,
+      "external_scripts_observed": 7,
+      "third_party_domains_observed": 2,
+      "automations_detected": 2,
+      "dpia_readiness_score": 82,
+      "readiness_posture": "Moderate Readiness (Advisory Enhancements Recommended)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "slug": "zerodha",
+      "url": "https://zerodha.com",
+      "sector": "Financial Services / Broking",
+      "http_status": 200,
+      "cookies_observed": 2,
+      "external_scripts_observed": 6,
+      "third_party_domains_observed": 1,
+      "automations_detected": 1,
+      "dpia_readiness_score": 87,
+      "readiness_posture": "High Readiness (Aligned)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "slug": "nykaa",
+      "url": "https://www.nykaa.com",
+      "sector": "Retail & E-Commerce",
+      "http_status": 200,
+      "cookies_observed": 86,
+      "external_scripts_observed": 22,
+      "third_party_domains_observed": 1,
+      "automations_detected": 6,
+      "dpia_readiness_score": 73,
+      "readiness_posture": "Moderate Readiness (Advisory Enhancements Recommended)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "slug": "practo",
+      "url": "https://www.practo.com",
+      "sector": "Healthcare & Clinics",
+      "http_status": 200,
+      "cookies_observed": 2,
+      "external_scripts_observed": 4,
+      "third_party_domains_observed": 2,
+      "automations_detected": 4,
+      "dpia_readiness_score": 76,
+      "readiness_posture": "Moderate Readiness (Advisory Enhancements Recommended)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "slug": "npci",
+      "url": "https://www.npci.org.in",
+      "sector": "Digital Public Infrastructure",
+      "http_status": 200,
+      "cookies_observed": 1,
+      "external_scripts_observed": 3,
+      "third_party_domains_observed": 1,
+      "automations_detected": 4,
+      "dpia_readiness_score": 72,
+      "readiness_posture": "Moderate Readiness (Advisory Enhancements Recommended)",
+      "eval_score_100": 100,
+      "rubric_breakdown": {
+        "evidence_grounding_20": 20,
+        "zero_hallucinations_20": 20,
+        "automation_detection_20": 20,
+        "statutory_mapping_20": 20,
+        "reputation_safe_tone_20": 20
+      },
+      "passed": true,
+      "issues": []
+    }
+  ]
+}

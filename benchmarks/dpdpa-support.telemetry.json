@@ -1,0 +1,170 @@
+{
+  "slug": "dpdpa-support",
+  "sector": "LegalTech / Compliance",
+  "entity_label": "DPDPA Support (LegalTech Reference Site)",
+  "target_url": "https://dpdpa.support",
+  "canonical_domain": "dpdpa.support",
+  "evaluated_at_utc": "2026-11-06T08:33:59.017Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://dpdpa.support/",
+    "response_time_ms": 2352,
+    "html_bytes": 229702,
+    "security_headers": {
+      "strict_transport_security": "max-age=31536000; includeSubDomains",
+      "content_security_policy": "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com 'sha256-hyQAMMkSuzBYIm9rRz2YvHQ2JeKeTYlD93NDigNLNFA=' 'sha256-gYqEQMOu3oQwy7kF8zYSBm1I34RMrf7648McbVGBv+E=' https://*.razorpay.com https://razorpay.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://*.razorpay.com https://razorpay.com; img-src 'self' data: https://*.razorpay.com https://razorpay.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self' https://*.razorpay.com https://razorpay.com; media-src 'self'; connect-src 'self' https://*.razorpay.com https://razorpay.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://*.razorpay.com https://razorpay.com; object-src 'none'; upgrade-insecure-requests; frame-src 'self' https://*.razorpay.com https://razorpay.com https://www.youtube-nocookie.com",
+      "x_frame_options": "DENY",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": "strict-origin-when-cross-origin",
+      "permissions_policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+      "server": "cloudflare",
+      "cf_ray": "a562c1b36ec0e27e-MRS",
+      "x_cache": null
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 0,
+    "first_party_count": 0,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 0,
+    "cookies": []
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 6,
+    "script_urls": [
+      "https://dpdpa.support/assets/js/vendor/gsap.min.js?v=3.12.5",
+      "https://dpdpa.support/assets/js/vendor/ScrollTrigger.min.js?v=3.12.5",
+      "https://dpdpa.support/assets/js/site.js?v=716be458",
+      "https://dpdpa.support/assets/js/anim.js?v=716be458",
+      "https://dpdpa.support/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    ],
+    "third_party_domains_count": 1,
+    "third_party_domains": [
+      {
+        "domain": "static.cloudflareinsights.com",
+        "asset_count": 1,
+        "sample_url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 3,
+    "marketing_and_crm_automations": [],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Tag Manager (GTM)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "DOM/Script signature match: GTM-NTKGT7QP",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Orchestrates client-side event routing and third-party tag firing; requires consent gating under Section 6 and Rule 3 prior to non-essential telemetry dispatch.",
+        "advisory_governance_action": "Configure Google Tag Manager Consent Mode v2 with default denied state for analytics_storage and ad_storage until affirmative Data Principal consent is recorded."
+      },
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Response Header match: google-analytics.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      },
+      {
+        "vendor_name": "Cloudflare Web Analytics / Insights",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "Script URL: https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Provides edge bot mitigation and aggregate performance telemetry under Section 8(5) reasonable security safeguards.",
+        "advisory_governance_action": "Document edge security cookies and telemetry in the Section 5 / Rule 3 itemised privacy notice."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": []
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [
+      {
+        "name": "Custom / First-Party Consent Banner",
+        "matched_token": "consent-banner"
+      }
+    ],
+    "has_reject_or_manage_option_in_dom": false,
+    "forms_inspected_count": 0,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": true
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 16,
+    "privacy_notice_links": [
+      {
+        "url": "https://dpdpa.support/legal/privacy/",
+        "label": "Privacy notice"
+      },
+      {
+        "url": "https://dpdpa.support/news/",
+        "label": "News DPDPA News (29 Oct): SBI customer breach PII risks flagged; IMPRI analyzes "
+      },
+      {
+        "url": "https://dpdpa.support/dpdpa-cyber-insurance-cfo-guide/",
+        "label": "Guide New guide: Cookie banner rules (Section 5, 6 &amp; Rule 3) &amp; CFO cyber"
+      },
+      {
+        "url": "https://dpdpa.support/",
+        "label": "DPDPA Support by Cynor Sense"
+      },
+      {
+        "url": "https://dpdpa.support/dpdpa-duties/#lead-box",
+        "label": "Free sample"
+      },
+      {
+        "url": "https://dpdpa.support/does-dpdpa-apply/",
+        "label": "2-minute check &rarr;"
+      },
+      {
+        "url": "https://pages.razorpay.com/dpdpa-toolkit",
+        "label": "Buy toolkit &middot; ₹2,999 &rarr;"
+      },
+      {
+        "url": "https://dpdpa.support/toolkit/01-start-here/",
+        "label": "Step 01: Start here Find out whether the Act applies, then see which duties you "
+      },
+      {
+        "url": "https://dpdpa.support/toolkit/04-set-the-rules/",
+        "label": "Step 04: Set the rules The Data Protection Policy your business commits to, in 1"
+      },
+      {
+        "url": "https://dpdpa.support/toolkit/12-bonus-tools/",
+        "label": "Step 12: Bonus tools A budget brief, a roles guide for messy org charts, and a f"
+      }
+    ],
+    "grievance_links_count": 2,
+    "grievance_links": [
+      {
+        "url": "https://pages.razorpay.com/dpdpa-toolkit",
+        "label": "All 8 Sectors Master Pack (Multi-Client Licence + 1-on-1 DPO Call) &mdash; &#837"
+      },
+      {
+        "url": "https://dpdpa.support/articles/data-principal-rights-90-day-grievance-limit/",
+        "label": "Grievances"
+      }
+    ],
+    "privacy_policy_passive_check": {
+      "inspected_url": "https://dpdpa.support/legal/privacy/",
+      "status": 200,
+      "grievance_officer_mentioned": true,
+      "dpo_contact_mentioned": true,
+      "ninety_day_sla_mentioned": true,
+      "retention_mentioned": true,
+      "cross_border_mentioned": true,
+      "children_data_mentioned": true
+    }
+  }
+}

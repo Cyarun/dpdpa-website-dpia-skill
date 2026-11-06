@@ -1,0 +1,269 @@
+{
+  "report_metadata": {
+    "audit_id": "DPIA-BENCH-2026-NPCI",
+    "target_url": "https://www.npci.org.in",
+    "canonical_domain": "www.npci.org.in",
+    "evaluated_at_utc": "2026-11-06T08:34:09.818Z",
+    "assessment_framing": "Confidential & Constructive Advisory DPIA Readiness Assessment",
+    "audit_scope": "Publicly observable client-side DOM, HTTP response headers, pre-consent storage, network requests, and website automation signals (Read-Only Website Scope)",
+    "statutory_baseline": {
+      "act": "Digital Personal Data Protection Act, 2023 (No. 22 of 2023; 9 Chapters, 44 Sections, 1 Schedule)",
+      "rules": "Digital Personal Data Protection Rules, 2025 (G.S.R. 846(E), notified 13 November 2025; 23 Rules, 7 Schedules)",
+      "enforcement_timeline": "Phased: 13 Nov 2025 (Rules 1-2, 17-21); 13 Nov 2026 (Rule 4 Consent Manager registration); 13 May 2027 (Rules 3, 5-16, 22-23 operational compliance)",
+      "grievance_sla_days": 90,
+      "security_log_retention_minimum": "Minimum 1 year (Rule 8(3) read with Seventh Schedule)"
+    },
+    "evaluating_model_family": "deterministic-telemetry-only"
+  },
+  "executive_readiness_summary": {
+    "overall_readiness_score_0_100": 72,
+    "readiness_posture": "Moderate Readiness (Advisory Enhancements Recommended)",
+    "rule13_dpia_and_algorithmic_risk_triggered": true,
+    "rule13_trigger_rationale": "Observed 4 client-side automation/telemetry signal(s) on www.npci.org.in (including CRM, CDP, session replay, chat, or ad-tech integrations), which warrant formal documentation under Rule 13(1)-(2) DPIA and algorithmic governance workflows.",
+    "key_observed_strengths": [
+      "HTTPS transport security active on https://www.npci.org.in/ (HTTP 200, 242ms response time).",
+      "Zero pre-ticked consent checkboxes observed across 0 inspected DOM form(s).",
+      "Enforces HTTP Strict-Transport-Security (max-age=31536000; includeSubdomains; preload)."
+    ],
+    "priority_readiness_enhancements": [
+      "Notice & Transparency (Sec 5 / Rule 3): Ensure every page footer and data collection form includes a prominent, static HTML anchor link to an itemised Section 5 / Rule 3 Privacy Notice with multi-language support (Eighth Schedule languages).",
+      "Consent & Dark-Pattern Symmetry (Sec 6 / Rules 3-4): Configure a DPDP-aligned Consent Management Platform (CMP) with equal visual prominence for Accept and Reject/Manage buttons, and set `HttpOnly`, `Secure`, and `SameSite=Lax/Strict` on all session cookies.",
+      "Website Automations, AI & Profiling (Sec 6 / Rule 13(2)): Maintain an internal Website Automation & Tag Governance Register mapping each client-side SDK to its consent category, data retention TTL, and DOM input-masking configuration.",
+      "Grievance Redressal & 90-Day SLA (Sec 13 / Rule 14(3)): Add a dedicated Grievance Redressal & DPO section to the Privacy Notice footer specifying the Officer name/designation, email/portal link, and the Rule 14(3) 90-day maximum resolution SLA.",
+      "Cross-Border Sub-Processors (Sec 16 / Rule 15): Maintain a live Sub-Processor & Cross-Border Transfer Register covering all third-party script/CDN domains and verify valid Data Processing Agreements (DPAs) under Section 8(2)."
+    ],
+    "board_advisory_synopsis": "This confidential, read-only passive DPIA readiness assessment of NPCI (National Payments Corporation of India) (https://www.npci.org.in, Sector: Digital Public Infrastructure) evaluated publicly observable HTTP headers, 1 Set-Cookie header(s), 3 external script(s), and 4 client-side automation signature(s) against the Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025 (G.S.R. 846(E)). Overall Readiness Score: 72/100 (Moderate Readiness (Advisory Enhancements Recommended))."
+  },
+  "pre_consent_storage_and_cookies": {
+    "pre_consent_tracking_observed": true,
+    "first_party_cookies_count": 1,
+    "third_party_cookies_count": 0,
+    "cookies_inventory": [
+      {
+        "name": "AKA_A2",
+        "domain": "npci.org.in",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "Unspecified",
+        "expiry_days": 0,
+        "set_before_consent": true
+      }
+    ],
+    "local_storage_keys": [],
+    "session_storage_keys": [],
+    "indexeddb_databases": [],
+    "service_workers_registered": []
+  },
+  "website_automations_and_profiling_inventory": {
+    "total_automations_detected": 4,
+    "marketing_and_crm_automations": [],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Tag Manager (GTM)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "Script URL: https://www.googletagmanager.com/gtag/js?id=G-HCGYNL0JL5",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Orchestrates client-side event routing and third-party tag firing; requires consent gating under Section 6 and Rule 3 prior to non-essential telemetry dispatch.",
+        "advisory_governance_action": "Configure Google Tag Manager Consent Mode v2 with default denied state for analytics_storage and ad_storage until affirmative Data Principal consent is recorded."
+      },
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Response Header match: google-analytics.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": [
+      {
+        "vendor_name": "Meta / Facebook Pixel (fbevents.js)",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "DOM/Script signature match: connect.facebook.net/en_US/fbevents.js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Enables cross-site ad attribution and retargeting audiences; Auto-Advanced Matching can hash DOM form inputs if not restricted.",
+        "advisory_governance_action": "Disable Automatic Advanced Matching by default and block fbevents.js execution until explicit marketing consent is obtained."
+      },
+      {
+        "vendor_name": "Google Ads / DoubleClick Floodlight",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "HTTP Response Header match: googleadservices.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Tracks advertising conversions and remarketing identifiers across web properties.",
+        "advisory_governance_action": "Block advertising conversion tags prior to explicit opt-in consent and provide one-click withdrawal parity."
+      }
+    ],
+    "form_input_and_dark_pattern_signals": {
+      "forms_inspected_count": 0,
+      "pre_ticked_checkboxes_count": 0,
+      "bundled_consent_forms_count": 0,
+      "unencrypted_or_insecure_form_actions": [],
+      "early_field_capture_listeners_detected": false,
+      "observations": [
+        "Passively inspected 0 <form> element(s) and 0 checkbox input(s) in initial HTML; 0 pre-ticked checkbox(es) detected."
+      ]
+    },
+    "fingerprinting_and_background_signals": {
+      "web_push_permission_requested_on_load": false,
+      "canvas_or_webgl_fingerprint_signals": false,
+      "navigator_beacon_or_fetch_keepalive_observed": false,
+      "details": [
+        "Web Push on-load request: false",
+        "Canvas/WebGL fingerprinting API in inline HTML: false",
+        "Beacon telemetry API signal: false"
+      ]
+    }
+  },
+  "statutory_dpdpa_control_matrix": {
+    "section_5_rule_3_notice": {
+      "statutory_reference": "DPDP Act Section 5(1) & DPDP Rules, 2025 Rule 3",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "HTTP status 200 on https://www.npci.org.in (7108 bytes HTML inspected)",
+        "Discovered 0 privacy/legal notice link(s) in DOM"
+      ],
+      "advisory_summary": "Surface a static, server-rendered Privacy Notice anchor link on the landing page."
+    },
+    "section_6_rule_3_4_consent_and_cmp": {
+      "statutory_reference": "DPDP Act Section 6(1), 6(4) & DPDP Rules, 2025 Rules 3-4",
+      "readiness_tier": "Priority Readiness Action",
+      "observed_signals": [
+        "Pre-consent Set-Cookie headers observed: 1 total (1 first-party, 0 third-party, 0 non-essential)",
+        "CMP / consent banner signatures detected in DOM: None detected in initial HTML payload",
+        "DOM forms inspected: 0; pre-ticked checkboxes observed: 0"
+      ],
+      "advisory_summary": "Gate non-essential cookies and analytics/marketing scripts behind an affirmative consent banner with symmetrical Reject/Manage controls."
+    },
+    "section_8_5_rule_6_8_security_and_logs": {
+      "statutory_reference": "DPDP Act Section 8(5) & DPDP Rules, 2025 Rule 6 & Rule 8(3)",
+      "readiness_tier": "Aligned",
+      "observed_signals": [
+        "HTTPS transport verified on https://www.npci.org.in/",
+        "HSTS header: max-age=31536000; includeSubdomains; preload",
+        "CSP header: Present (default-src 'self'; base-uri 'self'; object-src 'none'; fram...)",
+        "X-Content-Type-Options: nosniff; X-Frame-Options: SAMEORIGIN"
+      ],
+      "advisory_summary": "Core HTTP security headers (HSTS, CSP, X-Frame-Options, X-Content-Type-Options) are present."
+    },
+    "section_9_rules_10_11_children_safeguards": {
+      "statutory_reference": "DPDP Act Section 9(1)-(3) & DPDP Rules, 2025 Rules 10-11",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "Children's data / parental consent references in inspected text: Not explicitly surfaced in initial landing DOM",
+        "Ad-pixel or behavioral retargeting scripts detected on initial load: 2"
+      ],
+      "advisory_summary": "Ensure age-gating or verifiable parental consent workflows are documented where services may be accessed by Data Principals under 18."
+    },
+    "section_10_rule_13_dpia_and_algorithmic_governance": {
+      "statutory_reference": "DPDP Act Section 10(2)(c) & DPDP Rules, 2025 Rule 13(1)-(3)",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "Total client-side automation/telemetry signatures detected: 4",
+        "Breakdown: 2 CDP/Tag Manager, 0 Marketing/CRM, 0 Session Replay/Heatmap, 0 AI/Chat Widget, 2 Ad Pixel"
+      ],
+      "advisory_summary": "Document client-side marketing, CDP, session replay, and conversational automations in the annual Rule 13 DPIA register."
+    },
+    "section_13_rule_14_3_grievance_and_dpo": {
+      "statutory_reference": "DPDP Act Section 8(10), Section 13 & DPDP Rules, 2025 Rule 14(3)",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "Grievance / DPO links in landing DOM: 0",
+        "Grievance Officer / Nodal Officer mention in inspected policy corpus: Not detected in passive crawl scope",
+        "DPO / Privacy contact channel in inspected policy corpus: Not detected in passive crawl scope",
+        "Explicit 90-day statutory SLA (Rule 14(3)) mention: Recommended for explicit disclosure"
+      ],
+      "advisory_summary": "Publish designated Grievance Officer / DPO contact details and explicitly state the 90-day maximum grievance resolution SLA per Rule 14(3)."
+    },
+    "section_16_rule_15_cross_border_transfers": {
+      "statutory_reference": "DPDP Act Section 8(2), Section 16 & DPDP Rules, 2025 Rule 15",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "External third-party script/asset domains observed on load: 1 (www.googletagmanager.com)",
+        "Cross-border transfer disclosure in inspected policy text: Recommended for itemised sub-processor mapping"
+      ],
+      "advisory_summary": "Document the 1 external script/asset domain(s) in the Sub-Processor & Cross-Border Transfer Register."
+    }
+  },
+  "advisory_findings": [
+    {
+      "finding_id": "DPIA-001",
+      "pillar": "Notice & Transparency (Sec 5 / Rule 3)",
+      "observed_technical_signal": "HTTP 200 on https://www.npci.org.in; 0 privacy/legal notice link(s) detected in DOM (none in initial HTML).",
+      "statutory_mapping": "DPDP Act, 2023 Section 5(1) read with DPDP Rules, 2025 Rule 3 (Itemised Notice in clear and plain language)",
+      "readiness_tier": "Advisory Enhancement",
+      "reputation_safe_advisory_note": "Passive inspection of the initial HTML payload (7108 bytes) did not surface an explicit anchor link matching standard privacy notice patterns (or links are rendered dynamically client-side). Surfacing a static, crawlable Section 5 notice link enhances transparency readiness.",
+      "recommended_engineering_fix": "Ensure every page footer and data collection form includes a prominent, static HTML anchor link to an itemised Section 5 / Rule 3 Privacy Notice with multi-language support (Eighth Schedule languages).",
+      "verification_method": "Run a read-only curl/DOM check on the landing page and verify `<a href=\"/privacy\">` is present in the server-rendered HTML."
+    },
+    {
+      "finding_id": "DPIA-002",
+      "pillar": "Consent & Dark-Pattern Symmetry (Sec 6 / Rules 3-4)",
+      "observed_technical_signal": "Set-Cookie headers on initial GET: 1 cookie(s) (1 first-party, 0 third-party; cookie names: AKA_A2); CMP banners detected: none; pre-ticked checkboxes: 0.",
+      "statutory_mapping": "DPDP Act, 2023 Section 6(1) & Section 6(4) read with DPDP Rules, 2025 Rules 3 and 4 (Free, specific, informed, unconditional consent & withdrawal ease)",
+      "readiness_tier": "Priority Readiness Action",
+      "reputation_safe_advisory_note": "Initial page load sets 1 cookie(s) and loads 4 client-side telemetry/automation script signature(s) prior to an affirmative consent interaction. While common across modern web architectures, gating non-essential analytics and marketing tags behind an explicit opt-in banner with symmetrical 'Accept' and 'Reject / Manage' controls aligns the user journey with Section 6(1) and Section 6(4).",
+      "recommended_engineering_fix": "Configure a DPDP-aligned Consent Management Platform (CMP) with equal visual prominence for Accept and Reject/Manage buttons, and set `HttpOnly`, `Secure`, and `SameSite=Lax/Strict` on all session cookies.",
+      "verification_method": "Inspect initial HTTP `Set-Cookie` headers and network requests in a clean browser profile before interacting with the consent banner."
+    },
+    {
+      "finding_id": "DPIA-003",
+      "pillar": "Website Automations, AI & Profiling (Sec 6 / Rule 13(2))",
+      "observed_technical_signal": "Detected 4 client-side automation signature(s) across 3 external script(s): Google Tag Manager (GTM) (Script URL: https://www.googletagmanager.com/gtag/js?id=G-HCGYNL0JL5); Google Analytics 4 (GA4) (HTTP Response Header match: google-analytics.com); Meta / Facebook Pixel (fbevents.js) (DOM/Script signature match: connect.facebook.net/en_US/fbevents.js); Google Ads / DoubleClick Floodlight (HTTP Response Header match: googleadservices.com).",
+      "statutory_mapping": "DPDP Act, 2023 Section 6 & Section 10(2)(c) read with DPDP Rules, 2025 Rule 13(1)-(3) (Annual DPIA & algorithmic/automated software risk assessment)",
+      "readiness_tier": "Advisory Enhancement",
+      "reputation_safe_advisory_note": "Passive DOM inspection identified 4 client-side automation or telemetry integration(s). Under Rule 13(2), Significant Data Fiduciaries (and privacy-forward enterprises conducting proactive DPIAs) are encouraged to document the purpose, behavioral profiling scope, and consent binding of all tag managers, CRM trackers, session replay tools, and conversational widgets.",
+      "recommended_engineering_fix": "Maintain an internal Website Automation & Tag Governance Register mapping each client-side SDK to its consent category, data retention TTL, and DOM input-masking configuration.",
+      "verification_method": "Verify that every script in the tag manager is bound to an explicit consent trigger and documented in the annual Rule 13 DPIA ledger."
+    },
+    {
+      "finding_id": "DPIA-004",
+      "pillar": "Reasonable Security Safeguards (Sec 8(5) / Rule 6)",
+      "observed_technical_signal": "Security headers on https://www.npci.org.in/: HSTS=Present, CSP=Present, X-Frame-Options=SAMEORIGIN, X-Content-Type-Options=nosniff, Referrer-Policy=strict-origin-when-cross-origin.",
+      "statutory_mapping": "DPDP Act, 2023 Section 8(5) read with DPDP Rules, 2025 Rule 6 (Reasonable security safeguards, encryption in transit, access controls) and Rule 8(3) (1-year minimum security log retention)",
+      "readiness_tier": "Aligned",
+      "reputation_safe_advisory_note": "All primary HTTP security headers (HSTS, CSP, X-Frame-Options, X-Content-Type-Options) are present on www.npci.org.in, supporting robust transport and browser-side script isolation under Rule 6.",
+      "recommended_engineering_fix": "Configure edge CDN/web server responses to include Strict-Transport-Security (max-age=31536000; includeSubDomains), a restrictive Content-Security-Policy, X-Content-Type-Options: nosniff, and Referrer-Policy: strict-origin-when-cross-origin, alongside 1-year security log retention (Rule 8(3)).",
+      "verification_method": "Run `curl -sI https://www.npci.org.in` and confirm all recommended security headers are returned with HTTP 200."
+    },
+    {
+      "finding_id": "DPIA-005",
+      "pillar": "Grievance Redressal & 90-Day SLA (Sec 13 / Rule 14(3))",
+      "observed_technical_signal": "Grievance/DPO links in landing DOM: 0; Grievance Officer mention in policy corpus: false; DPO/Privacy contact mention: false; 90-day SLA mention: false.",
+      "statutory_mapping": "DPDP Act, 2023 Section 8(10) & Section 13 read with DPDP Rules, 2025 Rule 14(3) (Grievance resolution within a period not exceeding 90 days)",
+      "readiness_tier": "Advisory Enhancement",
+      "reputation_safe_advisory_note": "While privacy or contact channels are available, explicitly publishing the designated Grievance Officer / Data Protection Officer contact coordinates and stating the statutory resolution SLA of 'not exceeding 90 days' (Rule 14(3)) in the public privacy notice provides immediate statutory clarity for Data Principals.",
+      "recommended_engineering_fix": "Add a dedicated Grievance Redressal & DPO section to the Privacy Notice footer specifying the Officer name/designation, email/portal link, and the Rule 14(3) 90-day maximum resolution SLA.",
+      "verification_method": "Inspect the public Privacy Notice page for explicit mention of \"Grievance Officer\" and \"90 days\" (Rule 14(3))."
+    },
+    {
+      "finding_id": "DPIA-006",
+      "pillar": "Cross-Border Sub-Processors (Sec 16 / Rule 15)",
+      "observed_technical_signal": "Observed 1 external asset/script domain(s) on initial page load: www.googletagmanager.com.",
+      "statutory_mapping": "DPDP Act, 2023 Section 8(2) & Section 16 read with DPDP Rules, 2025 Rule 15 (Cross-border transfer conditions & Data Processor contracts)",
+      "readiness_tier": "Advisory Enhancement",
+      "reputation_safe_advisory_note": "The website loads resources from 1 external domain(s), which initiates client browser connections (sharing IP address and User-Agent metadata) with global CDN or SaaS endpoints. Cataloging these endpoints in an internal Sub-Processor & Cross-Border Register supports Section 8(2) and Section 16 governance.",
+      "recommended_engineering_fix": "Maintain a live Sub-Processor & Cross-Border Transfer Register covering all third-party script/CDN domains and verify valid Data Processing Agreements (DPAs) under Section 8(2).",
+      "verification_method": "Cross-check all third-party domains observed in passive network telemetry against the published Sub-Processor Register."
+    }
+  ],
+  "subprocessor_and_cross_border_register": [
+    {
+      "third_party_domain": "www.googletagmanager.com",
+      "vendor_or_service_name": "Google LLC (Google Tag Manager / Analytics)",
+      "category": "Tag Management & Web Analytics",
+      "estimated_primary_jurisdiction": "United States / Global Cloud",
+      "fired_before_consent": true,
+      "dpdpa_governance_recommendation": "Ensure Google Tag Manager Consent Mode v2 is active and documented in the Section 5 itemised notice and Section 16 cross-border register."
+    }
+  ],
+  "reputation_safety_attestation": {
+    "zero_defamation_verified": true,
+    "prohibited_terms_absent": true,
+    "read_only_passive_inspection_confirmed": true,
+    "disclaimer": "This report is a confidential, read-only technical DPIA readiness assessment based solely on publicly observable client-side website signals at the timestamp of inspection. It does not constitute a legal opinion or statutory certification, and makes no representation regarding backend/internal organisational controls."
+  }
+}

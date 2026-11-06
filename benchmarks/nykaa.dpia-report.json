@@ -1,0 +1,1223 @@
+{
+  "report_metadata": {
+    "audit_id": "DPIA-BENCH-2026-NYKAA",
+    "target_url": "https://www.nykaa.com",
+    "canonical_domain": "www.nykaa.com",
+    "evaluated_at_utc": "2026-11-06T08:34:06.665Z",
+    "assessment_framing": "Confidential & Constructive Advisory DPIA Readiness Assessment",
+    "audit_scope": "Publicly observable client-side DOM, HTTP response headers, pre-consent storage, network requests, and website automation signals (Read-Only Website Scope)",
+    "statutory_baseline": {
+      "act": "Digital Personal Data Protection Act, 2023 (No. 22 of 2023; 9 Chapters, 44 Sections, 1 Schedule)",
+      "rules": "Digital Personal Data Protection Rules, 2025 (G.S.R. 846(E), notified 13 November 2025; 23 Rules, 7 Schedules)",
+      "enforcement_timeline": "Phased: 13 Nov 2025 (Rules 1-2, 17-21); 13 Nov 2026 (Rule 4 Consent Manager registration); 13 May 2027 (Rules 3, 5-16, 22-23 operational compliance)",
+      "grievance_sla_days": 90,
+      "security_log_retention_minimum": "Minimum 1 year (Rule 8(3) read with Seventh Schedule)"
+    },
+    "evaluating_model_family": "deterministic-telemetry-only"
+  },
+  "executive_readiness_summary": {
+    "overall_readiness_score_0_100": 73,
+    "readiness_posture": "Moderate Readiness (Advisory Enhancements Recommended)",
+    "rule13_dpia_and_algorithmic_risk_triggered": true,
+    "rule13_trigger_rationale": "Observed 6 client-side automation/telemetry signal(s) on www.nykaa.com (including CRM, CDP, session replay, chat, or ad-tech integrations), which warrant formal documentation under Rule 13(1)-(2) DPIA and algorithmic governance workflows.",
+    "key_observed_strengths": [
+      "HTTPS transport security active on https://www.nykaa.com/ (HTTP 200, 1535ms response time).",
+      "Zero pre-ticked consent checkboxes observed across 1 inspected DOM form(s).",
+      "Surfaces 1 accessible privacy/legal notice link(s) directly in the DOM.",
+      "Enforces HTTP Strict-Transport-Security (max-age=31536000 ; includeSubDomains ; preload)."
+    ],
+    "priority_readiness_enhancements": [
+      "Consent & Dark-Pattern Symmetry (Sec 6 / Rules 3-4): Configure a DPDP-aligned Consent Management Platform (CMP) with equal visual prominence for Accept and Reject/Manage buttons, and set `HttpOnly`, `Secure`, and `SameSite=Lax/Strict` on all session cookies.",
+      "Website Automations, AI & Profiling (Sec 6 / Rule 13(2)): Maintain an internal Website Automation & Tag Governance Register mapping each client-side SDK to its consent category, data retention TTL, and DOM input-masking configuration.",
+      "Grievance Redressal & 90-Day SLA (Sec 13 / Rule 14(3)): Add a dedicated Grievance Redressal & DPO section to the Privacy Notice footer specifying the Officer name/designation, email/portal link, and the Rule 14(3) 90-day maximum resolution SLA.",
+      "Cross-Border Sub-Processors (Sec 16 / Rule 15): Maintain a live Sub-Processor & Cross-Border Transfer Register covering all third-party script/CDN domains and verify valid Data Processing Agreements (DPAs) under Section 8(2)."
+    ],
+    "board_advisory_synopsis": "This confidential, read-only passive DPIA readiness assessment of Nykaa (Consumer Retail & E-Commerce) (https://www.nykaa.com, Sector: Retail & E-Commerce) evaluated publicly observable HTTP headers, 86 Set-Cookie header(s), 22 external script(s), and 6 client-side automation signature(s) against the Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025 (G.S.R. 846(E)). Overall Readiness Score: 73/100 (Moderate Readiness (Advisory Enhancements Recommended))."
+  },
+  "pre_consent_storage_and_cookies": {
+    "pre_consent_tracking_observed": true,
+    "first_party_cookies_count": 86,
+    "third_party_cookies_count": 0,
+    "cookies_inventory": [
+      {
+        "name": "countryCode",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 0,
+        "set_before_consent": true
+      },
+      {
+        "name": "storeId",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 0,
+        "set_before_consent": true
+      },
+      {
+        "name": "bcookie",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NYKAA_NOW_RAAP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NYKAA_NOW_FILTER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_EMAIL_VERIFICATION_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NEW_SHOPPING_BAG",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_DWEB_SHOPPING_BAG_URL",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ITEM_DISCOUNT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ORDERS_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_LOGIN_SEGMENT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_REORDER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_CP_GAMES",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Analytics & Telemetry",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_SEGMENT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_VIEW_SIMILAR_HLP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_VIEW_SIMILAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_PRODUCT_V3",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_HLP_CARD_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_WISHLIST",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PRICE_REVEAL_NEW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_INLINE_FILTER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_EDD_DELIVERY_WIDGET",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_MULTI_COUPONS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_DWEB_MULTICOUPON",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_SEARCH_BAR_NEW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_AUTH_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_INLINE_WIDGETS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_PINKBOX_CTA",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_QUERY_PARAM_EXP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_CALLOUT_NUDGE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_TOP_NAV_CONFIG",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_QUERY_PARAM_EXP_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_HP_SEARCH_ANIMATION",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PDP_HAMBURGER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AD_BRV",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_ZENDESK_CHAT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_HORIZONTAL_WIDGET_TYPE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_SPECULATIVE_PRERENDERING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_TAGS_RATING_ON_LISTING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_REVIEW_SUBMIT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_OFFER_DELTA_COMMUNICATION",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NEW_GC_PAGE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_DNW_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_GETAPP_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_CONVENIENCE_FEE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CONVERSATION_ROUTE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_SALE_PRICE_TAG",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_DS_AUTH_FLOW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PRODUCT_RACK_CS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_RATING_REVIEW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_SHOW_ASPECTS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_SEARCHCOUNT_MWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_BP_DN_PERS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_DESIGN_PARITY",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_STICKY_PRICE_V2",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_GROUPING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_DWEB_COLLAPSED_PRICE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CATEGORY_NUDGE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_MINI_PDP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_AGG_FOOTER_SSR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_COUPON_OFFER_REORDER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PDP_LITE_OFFERS_SSR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HEADER_SUBSTORE_TABS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HYBRID_SUBSTORE_TABS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_LADDER_OFFERS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_TOP_FILTERS_PLP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_FUTURE_COUPONS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HLP_RECO_WIDGETS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_BELOW_FOLD_SECTIONS_SSR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_BEST_SELLER_SEO",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_NEW_USER_OFFER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_NORTH_STAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HP_NORTH_STAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PDP_AI_REVIEW_SUMMARY",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_STICKY_PRICE_ON_LOAD",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_ADDRESS_BAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_BP_RECO_DN_PERS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_OVERNIGHT_ALLOCATION",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_SAVINGS_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PERS_DIFF_PRICING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ASK_NYKAA",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_UPDATED_AT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_SSR_CACHE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "bm_s",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "Unspecified",
+        "expiry_days": 31,
+        "set_before_consent": true
+      },
+      {
+        "name": "bm_so",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": true,
+        "same_site": "Unspecified",
+        "expiry_days": 1,
+        "set_before_consent": true
+      },
+      {
+        "name": "bm_sz",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 0.2,
+        "set_before_consent": true
+      }
+    ],
+    "local_storage_keys": [],
+    "session_storage_keys": [],
+    "indexeddb_databases": [],
+    "service_workers_registered": []
+  },
+  "website_automations_and_profiling_inventory": {
+    "total_automations_detected": 6,
+    "marketing_and_crm_automations": [
+      {
+        "vendor_name": "CleverTap / WebEngage / MoEngage",
+        "automation_category": "Marketing & CRM Automation",
+        "matched_signal": "HTTP Response Header match: clevertap.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Performs user segmentation, automated lifecycle triggers, and behavioral cohort profiling subject to Rule 13(2) algorithmic governance.",
+        "advisory_governance_action": "Ensure omnichannel engagement SDKs initialize in opt-out mode by default and log consent provenance for push/email automation."
+      }
+    ],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Tag Manager (GTM)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "DOM/Script signature match: googletagmanager.com/gtm.js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Orchestrates client-side event routing and third-party tag firing; requires consent gating under Section 6 and Rule 3 prior to non-essential telemetry dispatch.",
+        "advisory_governance_action": "Configure Google Tag Manager Consent Mode v2 with default denied state for analytics_storage and ad_storage until affirmative Data Principal consent is recorded."
+      },
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Response Header match: google-analytics.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [
+      {
+        "vendor_name": "Intercom / Freshchat / Zendesk / Drift / Crisp / Yellow.ai / Verloop",
+        "automation_category": "AI Chatbot / Conversational Agent / Support Widget",
+        "matched_signal": "HTTP Response Header match: zdassets.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Processes free-text conversational inputs and automated support triage; directly implicates Section 5 notice and Rule 13(2) algorithmic risk governance.",
+        "advisory_governance_action": "Display a concise pre-chat Section 5 notice snippet clarifying how conversational transcripts are processed and retained."
+      }
+    ],
+    "ad_pixels_and_auto_advanced_matching": [
+      {
+        "vendor_name": "Google Ads / DoubleClick Floodlight",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "HTTP Response Header match: googleadservices.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Tracks advertising conversions and remarketing identifiers across web properties.",
+        "advisory_governance_action": "Block advertising conversion tags prior to explicit opt-in consent and provide one-click withdrawal parity."
+      },
+      {
+        "vendor_name": "LinkedIn Insight Tag / X (Twitter) Pixel / Bing UET",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "HTTP Response Header match: bat.bing.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Associates site visits with social/professional profiles for retargeting cohorts.",
+        "advisory_governance_action": "Require explicit marketing category opt-in before loading social advertising pixels."
+      }
+    ],
+    "form_input_and_dark_pattern_signals": {
+      "forms_inspected_count": 1,
+      "pre_ticked_checkboxes_count": 0,
+      "bundled_consent_forms_count": 0,
+      "unencrypted_or_insecure_form_actions": [],
+      "early_field_capture_listeners_detected": false,
+      "observations": [
+        "Passively inspected 1 <form> element(s) and 0 checkbox input(s) in initial HTML; 0 pre-ticked checkbox(es) detected."
+      ]
+    },
+    "fingerprinting_and_background_signals": {
+      "web_push_permission_requested_on_load": false,
+      "canvas_or_webgl_fingerprint_signals": false,
+      "navigator_beacon_or_fetch_keepalive_observed": false,
+      "details": [
+        "Web Push on-load request: false",
+        "Canvas/WebGL fingerprinting API in inline HTML: false",
+        "Beacon telemetry API signal: false"
+      ]
+    }
+  },
+  "statutory_dpdpa_control_matrix": {
+    "section_5_rule_3_notice": {
+      "statutory_reference": "DPDP Act Section 5(1) & DPDP Rules, 2025 Rule 3",
+      "readiness_tier": "Aligned",
+      "observed_signals": [
+        "HTTP status 200 on https://www.nykaa.com (719364 bytes HTML inspected)",
+        "Discovered 1 privacy/legal notice link(s) in DOM: https://www.nykaa.com/terms-conditions/lp",
+        "Passively inspected linked notice https://www.nykaa.com/terms-conditions/lp (HTTP 200)"
+      ],
+      "advisory_summary": "Privacy/legal notice links are discoverable in the DOM; ensure itemised data and purpose disclosures per Rule 3."
+    },
+    "section_6_rule_3_4_consent_and_cmp": {
+      "statutory_reference": "DPDP Act Section 6(1), 6(4) & DPDP Rules, 2025 Rules 3-4",
+      "readiness_tier": "Priority Readiness Action",
+      "observed_signals": [
+        "Pre-consent Set-Cookie headers observed: 86 total (86 first-party, 0 third-party, 1 non-essential)",
+        "CMP / consent banner signatures detected in DOM: None detected in initial HTML payload",
+        "DOM forms inspected: 1; pre-ticked checkboxes observed: 0"
+      ],
+      "advisory_summary": "Gate non-essential cookies and analytics/marketing scripts behind an affirmative consent banner with symmetrical Reject/Manage controls."
+    },
+    "section_8_5_rule_6_8_security_and_logs": {
+      "statutory_reference": "DPDP Act Section 8(5) & DPDP Rules, 2025 Rule 6 & Rule 8(3)",
+      "readiness_tier": "Aligned",
+      "observed_signals": [
+        "HTTPS transport verified on https://www.nykaa.com/",
+        "HSTS header: max-age=31536000 ; includeSubDomains ; preload",
+        "CSP header: Present (img-src 'self' data: *.nykaa.com *.naikaa.com fsnecommerce.s...)",
+        "X-Content-Type-Options: nosniff; X-Frame-Options: sameorigin"
+      ],
+      "advisory_summary": "Core HTTP security headers (HSTS, CSP, X-Frame-Options, X-Content-Type-Options) are present."
+    },
+    "section_9_rules_10_11_children_safeguards": {
+      "statutory_reference": "DPDP Act Section 9(1)-(3) & DPDP Rules, 2025 Rules 10-11",
+      "readiness_tier": "Aligned",
+      "observed_signals": [
+        "Children's data / parental consent references in inspected text: Observed in policy text",
+        "Ad-pixel or behavioral retargeting scripts detected on initial load: 2"
+      ],
+      "advisory_summary": "Ensure age-gating or verifiable parental consent workflows are documented where services may be accessed by Data Principals under 18."
+    },
+    "section_10_rule_13_dpia_and_algorithmic_governance": {
+      "statutory_reference": "DPDP Act Section 10(2)(c) & DPDP Rules, 2025 Rule 13(1)-(3)",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "Total client-side automation/telemetry signatures detected: 6",
+        "Breakdown: 2 CDP/Tag Manager, 1 Marketing/CRM, 0 Session Replay/Heatmap, 1 AI/Chat Widget, 2 Ad Pixel"
+      ],
+      "advisory_summary": "Document client-side marketing, CDP, session replay, and conversational automations in the annual Rule 13 DPIA register."
+    },
+    "section_13_rule_14_3_grievance_and_dpo": {
+      "statutory_reference": "DPDP Act Section 8(10), Section 13 & DPDP Rules, 2025 Rule 14(3)",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "Grievance / DPO links in landing DOM: 0",
+        "Grievance Officer / Nodal Officer mention in inspected policy corpus: Not detected in passive crawl scope",
+        "DPO / Privacy contact channel in inspected policy corpus: Not detected in passive crawl scope",
+        "Explicit 90-day statutory SLA (Rule 14(3)) mention: Recommended for explicit disclosure"
+      ],
+      "advisory_summary": "Publish designated Grievance Officer / DPO contact details and explicitly state the 90-day maximum grievance resolution SLA per Rule 14(3)."
+    },
+    "section_16_rule_15_cross_border_transfers": {
+      "statutory_reference": "DPDP Act Section 8(2), Section 16 & DPDP Rules, 2025 Rule 15",
+      "readiness_tier": "Advisory Enhancement",
+      "observed_signals": [
+        "External third-party script/asset domains observed on load: 1 (cdn.naikaa.com)",
+        "Cross-border transfer disclosure in inspected policy text: Observed"
+      ],
+      "advisory_summary": "Document the 1 external script/asset domain(s) in the Sub-Processor & Cross-Border Transfer Register."
+    }
+  },
+  "advisory_findings": [
+    {
+      "finding_id": "DPIA-001",
+      "pillar": "Notice & Transparency (Sec 5 / Rule 3)",
+      "observed_technical_signal": "HTTP 200 on https://www.nykaa.com; 1 privacy/legal notice link(s) detected in DOM (https://www.nykaa.com/terms-conditions/lp).",
+      "statutory_mapping": "DPDP Act, 2023 Section 5(1) read with DPDP Rules, 2025 Rule 3 (Itemised Notice in clear and plain language)",
+      "readiness_tier": "Aligned",
+      "reputation_safe_advisory_note": "The website surfaces 1 accessible privacy/legal notice link(s) in the DOM. To strengthen Rule 3 readiness, ensure the notice presents an itemised inventory of personal data categories and specific processing purposes at every data collection point.",
+      "recommended_engineering_fix": "Ensure every page footer and data collection form includes a prominent, static HTML anchor link to an itemised Section 5 / Rule 3 Privacy Notice with multi-language support (Eighth Schedule languages).",
+      "verification_method": "Run a read-only curl/DOM check on the landing page and verify `<a href=\"/privacy\">` is present in the server-rendered HTML."
+    },
+    {
+      "finding_id": "DPIA-002",
+      "pillar": "Consent & Dark-Pattern Symmetry (Sec 6 / Rules 3-4)",
+      "observed_technical_signal": "Set-Cookie headers on initial GET: 86 cookie(s) (86 first-party, 0 third-party; cookie names: countryCode, storeId, bcookie, EXP_AB_NYKAA_NOW_RAAP, EXP_AB_NYKAA_NOW_FILTER, EXP_AB_EMAIL_VERIFICATION_REVAMP, EXP_AB_NEW_SHOPPING_BAG, EXP_AB_DWEB_SHOPPING_BAG_URL, EXP_ITEM_DISCOUNT, EXP_ORDERS_REVAMP, EXP_CART_LOGIN_SEGMENT, EXP_ADP_RV_REORDER, EXP_AB_CP_GAMES, EXP_ADP_RV_SEGMENT, EXP_ADP_RV_VIEW_SIMILAR_HLP, EXP_ADP_RV_VIEW_SIMILAR, EXP_ADP_RV_PRODUCT_V3, EXP_AB_HLP_CARD_REVAMP, EXP_AB_WISHLIST, EXP_AB_PRICE_REVEAL_NEW, EXP_PLP_INLINE_FILTER, EXP_EDD_DELIVERY_WIDGET, EXP_ADP_RV_MULTI_COUPONS, EXP_AB_DWEB_MULTICOUPON, EXP_ADP_RV_SEARCH_BAR_NEW, EXP_AB_AUTH_DWEB, EXP_PLP_INLINE_WIDGETS, EXP_PLP_PINKBOX_CTA, EXP_QUERY_PARAM_EXP, EXP_AB_CALLOUT_NUDGE, EXP_AB_TOP_NAV_CONFIG, EXP_QUERY_PARAM_EXP_DWEB, EXP_AB_HP_SEARCH_ANIMATION, EXP_AB_PDP_HAMBURGER, EXP_AD_BRV, EXP_AB_ZENDESK_CHAT, EXP_AB_HORIZONTAL_WIDGET_TYPE, EXP_SPECULATIVE_PRERENDERING, EXP_AB_TAGS_RATING_ON_LISTING, EXP_REVIEW_SUBMIT, EXP_AB_OFFER_DELTA_COMMUNICATION, EXP_AB_NEW_GC_PAGE, EXP_PLP_DNW_DWEB, EXP_AB_GETAPP_DWEB, EXP_AB_CONVENIENCE_FEE, EXP_CONVERSATION_ROUTE, EXP_AB_SALE_PRICE_TAG, EXP_AB_DS_AUTH_FLOW, EXP_AB_PRODUCT_RACK_CS, EXP_AB_RATING_REVIEW, EXP_AB_SHOW_ASPECTS, EXP_AB_SEARCHCOUNT_MWEB, EXP_AB_BP_DN_PERS, EXP_PLP_DESIGN_PARITY, EXP_AB_STICKY_PRICE_V2, EXP_CART_GROUPING, EXP_DWEB_COLLAPSED_PRICE, EXP_CATEGORY_NUDGE, EXP_CART_MINI_PDP, EXP_AB_AGG_FOOTER_SSR, EXP_COUPON_OFFER_REORDER, EXP_AB_PDP_LITE_OFFERS_SSR, EXP_HEADER_SUBSTORE_TABS, EXP_HYBRID_SUBSTORE_TABS, EXP_LADDER_OFFERS, EXP_AB_TOP_FILTERS_PLP, EXP_FUTURE_COUPONS, EXP_HLP_RECO_WIDGETS, EXP_AB_BELOW_FOLD_SECTIONS_SSR, EXP_BEST_SELLER_SEO, EXP_NEW_USER_OFFER, EXP_CART_NORTH_STAR, EXP_HP_NORTH_STAR, EXP_PDP_AI_REVIEW_SUMMARY, EXP_STICKY_PRICE_ON_LOAD, EXP_CART_ADDRESS_BAR, EXP_AB_BP_RECO_DN_PERS, EXP_OVERNIGHT_ALLOCATION, EXP_CART_SAVINGS_REVAMP, EXP_PERS_DIFF_PRICING, EXP_ASK_NYKAA, EXP_UPDATED_AT, EXP_SSR_CACHE, bm_s, bm_so, bm_sz); CMP banners detected: none; pre-ticked checkboxes: 0.",
+      "statutory_mapping": "DPDP Act, 2023 Section 6(1) & Section 6(4) read with DPDP Rules, 2025 Rules 3 and 4 (Free, specific, informed, unconditional consent & withdrawal ease)",
+      "readiness_tier": "Priority Readiness Action",
+      "reputation_safe_advisory_note": "Initial page load sets 86 cookie(s) and loads 6 client-side telemetry/automation script signature(s) prior to an affirmative consent interaction. While common across modern web architectures, gating non-essential analytics and marketing tags behind an explicit opt-in banner with symmetrical 'Accept' and 'Reject / Manage' controls aligns the user journey with Section 6(1) and Section 6(4).",
+      "recommended_engineering_fix": "Configure a DPDP-aligned Consent Management Platform (CMP) with equal visual prominence for Accept and Reject/Manage buttons, and set `HttpOnly`, `Secure`, and `SameSite=Lax/Strict` on all session cookies.",
+      "verification_method": "Inspect initial HTTP `Set-Cookie` headers and network requests in a clean browser profile before interacting with the consent banner."
+    },
+    {
+      "finding_id": "DPIA-003",
+      "pillar": "Website Automations, AI & Profiling (Sec 6 / Rule 13(2))",
+      "observed_technical_signal": "Detected 6 client-side automation signature(s) across 22 external script(s): Google Tag Manager (GTM) (DOM/Script signature match: googletagmanager.com/gtm.js); Google Analytics 4 (GA4) (HTTP Response Header match: google-analytics.com); CleverTap / WebEngage / MoEngage (HTTP Response Header match: clevertap.com); Intercom / Freshchat / Zendesk / Drift / Crisp / Yellow.ai / Verloop (HTTP Response Header match: zdassets.com); Google Ads / DoubleClick Floodlight (HTTP Response Header match: googleadservices.com); LinkedIn Insight Tag / X (Twitter) Pixel / Bing UET (HTTP Response Header match: bat.bing.com).",
+      "statutory_mapping": "DPDP Act, 2023 Section 6 & Section 10(2)(c) read with DPDP Rules, 2025 Rule 13(1)-(3) (Annual DPIA & algorithmic/automated software risk assessment)",
+      "readiness_tier": "Advisory Enhancement",
+      "reputation_safe_advisory_note": "Passive DOM inspection identified 6 client-side automation or telemetry integration(s). Under Rule 13(2), Significant Data Fiduciaries (and privacy-forward enterprises conducting proactive DPIAs) are encouraged to document the purpose, behavioral profiling scope, and consent binding of all tag managers, CRM trackers, session replay tools, and conversational widgets.",
+      "recommended_engineering_fix": "Maintain an internal Website Automation & Tag Governance Register mapping each client-side SDK to its consent category, data retention TTL, and DOM input-masking configuration.",
+      "verification_method": "Verify that every script in the tag manager is bound to an explicit consent trigger and documented in the annual Rule 13 DPIA ledger."
+    },
+    {
+      "finding_id": "DPIA-004",
+      "pillar": "Reasonable Security Safeguards (Sec 8(5) / Rule 6)",
+      "observed_technical_signal": "Security headers on https://www.nykaa.com/: HSTS=Present, CSP=Present, X-Frame-Options=sameorigin, X-Content-Type-Options=nosniff, Referrer-Policy=Absent.",
+      "statutory_mapping": "DPDP Act, 2023 Section 8(5) read with DPDP Rules, 2025 Rule 6 (Reasonable security safeguards, encryption in transit, access controls) and Rule 8(3) (1-year minimum security log retention)",
+      "readiness_tier": "Aligned",
+      "reputation_safe_advisory_note": "All primary HTTP security headers (HSTS, CSP, X-Frame-Options, X-Content-Type-Options) are present on www.nykaa.com, supporting robust transport and browser-side script isolation under Rule 6.",
+      "recommended_engineering_fix": "Configure edge CDN/web server responses to include Strict-Transport-Security (max-age=31536000; includeSubDomains), a restrictive Content-Security-Policy, X-Content-Type-Options: nosniff, and Referrer-Policy: strict-origin-when-cross-origin, alongside 1-year security log retention (Rule 8(3)).",
+      "verification_method": "Run `curl -sI https://www.nykaa.com` and confirm all recommended security headers are returned with HTTP 200."
+    },
+    {
+      "finding_id": "DPIA-005",
+      "pillar": "Grievance Redressal & 90-Day SLA (Sec 13 / Rule 14(3))",
+      "observed_technical_signal": "Grievance/DPO links in landing DOM: 0; Grievance Officer mention in policy corpus: false; DPO/Privacy contact mention: false; 90-day SLA mention: false.",
+      "statutory_mapping": "DPDP Act, 2023 Section 8(10) & Section 13 read with DPDP Rules, 2025 Rule 14(3) (Grievance resolution within a period not exceeding 90 days)",
+      "readiness_tier": "Advisory Enhancement",
+      "reputation_safe_advisory_note": "While privacy or contact channels are available, explicitly publishing the designated Grievance Officer / Data Protection Officer contact coordinates and stating the statutory resolution SLA of 'not exceeding 90 days' (Rule 14(3)) in the public privacy notice provides immediate statutory clarity for Data Principals.",
+      "recommended_engineering_fix": "Add a dedicated Grievance Redressal & DPO section to the Privacy Notice footer specifying the Officer name/designation, email/portal link, and the Rule 14(3) 90-day maximum resolution SLA.",
+      "verification_method": "Inspect the public Privacy Notice page for explicit mention of \"Grievance Officer\" and \"90 days\" (Rule 14(3))."
+    },
+    {
+      "finding_id": "DPIA-006",
+      "pillar": "Cross-Border Sub-Processors (Sec 16 / Rule 15)",
+      "observed_technical_signal": "Observed 1 external asset/script domain(s) on initial page load: cdn.naikaa.com.",
+      "statutory_mapping": "DPDP Act, 2023 Section 8(2) & Section 16 read with DPDP Rules, 2025 Rule 15 (Cross-border transfer conditions & Data Processor contracts)",
+      "readiness_tier": "Advisory Enhancement",
+      "reputation_safe_advisory_note": "The website loads resources from 1 external domain(s), which initiates client browser connections (sharing IP address and User-Agent metadata) with global CDN or SaaS endpoints. Cataloging these endpoints in an internal Sub-Processor & Cross-Border Register supports Section 8(2) and Section 16 governance.",
+      "recommended_engineering_fix": "Maintain a live Sub-Processor & Cross-Border Transfer Register covering all third-party script/CDN domains and verify valid Data Processing Agreements (DPAs) under Section 8(2).",
+      "verification_method": "Cross-check all third-party domains observed in passive network telemetry against the published Sub-Processor Register."
+    }
+  ],
+  "subprocessor_and_cross_border_register": [
+    {
+      "third_party_domain": "cdn.naikaa.com",
+      "vendor_or_service_name": "External Service (cdn.naikaa.com)",
+      "category": "Third-Party Web Resource / Telemetry Endpoint",
+      "estimated_primary_jurisdiction": "Global / Multi-Region Cloud",
+      "fired_before_consent": true,
+      "dpdpa_governance_recommendation": "Review sub-processor contract under Section 8(2) and disclose cross-border transfer posture under Section 16 / Rule 15."
+    }
+  ],
+  "reputation_safety_attestation": {
+    "zero_defamation_verified": true,
+    "prohibited_terms_absent": true,
+    "read_only_passive_inspection_confirmed": true,
+    "disclaimer": "This report is a confidential, read-only technical DPIA readiness assessment based solely on publicly observable client-side website signals at the timestamp of inspection. It does not constitute a legal opinion or statutory certification, and makes no representation regarding backend/internal organisational controls."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "eval_suite": "Website Automation, AI-Agent, Session Replay & Dark-Pattern Detector Eval",
+  "evaluated_at_utc": "2026-11-06T08:46:33.853Z",
+  "overall_score": 100,
+  "max_score": 100,
+  "status": "PASS (100/100)",
+  "registry_summary": {
+    "total_signatures": 76,
+    "categories": {
+      "marketing_crm_automation": 17,
+      "cdp_tag_managers": 7,
+      "session_replay_heatmaps": 11,
+      "ai_chatbots_conversational_agents": 16,
+      "ad_pixels_auto_advanced_matching": 9,
+      "consent_management_platforms": 10,
+      "dark_patterns_and_fingerprinting": 6
+    }
+  },
+  "checks": [
+    {
+      "check_id": "REGISTRY_COMPLETENESS_AND_SCHEMA",
+      "weight": 20,
+      "score": 20,
+      "passed": true,
+      "details": {
+        "total_signatures": 76,
+        "category_counts": {
+          "marketing_crm_automation": 17,
+          "cdp_tag_managers": 7,
+          "session_replay_heatmaps": 11,
+          "ai_chatbots_conversational_agents": 16,
+          "ad_pixels_auto_advanced_matching": 9,
+          "consent_management_platforms": 10,
+          "dark_patterns_and_fingerprinting": 6
+        },
+        "missing_fields_count": 0
+      }
+    },
+    {
+      "check_id": "ALL_76_SIGNATURES_RECALL",
+      "weight": 30,
+      "score": 30,
+      "passed": true,
+      "details": {
+        "tested_signatures": 76,
+        "recalled_signatures": 76,
+        "failed_signatures": []
+      }
+    },
+    {
+      "check_id": "ZERO_FALSE_POSITIVES_CLEAN_FIXTURE",
+      "weight": 20,
+      "score": 20,
+      "passed": true,
+      "details": {
+        "matched_on_clean_fixture": 0,
+        "forms_inspected": 1
+      }
+    },
+    {
+      "check_id": "REALISTIC_ENTERPRISE_MULTI_STACK_DETECTION",
+      "weight": 15,
+      "score": 15,
+      "passed": true,
+      "details": {
+        "total_automations_detected": 10,
+        "dark_patterns_matched": 6,
+        "rule_13_2_triggered": true,
+        "subprocessors_logged": 13
+      }
+    },
+    {
+      "check_id": "REPUTATION_SAFETY_AND_STATUTORY_TONE",
+      "weight": 15,
+      "score": 15,
+      "passed": true,
+      "details": {
+        "registry_prohibited_terms": [],
+        "output_prohibited_terms": []
+      }
+    }
+  ]
+}

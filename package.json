@@ -1,0 +1,41 @@
+{
+  "name": "dpdpa-website-dpia-skill",
+  "version": "1.0.0",
+  "description": "Free Open-Source Reputation-Safe Website DPIA Audit AI Skill for Claude, Gemini, DeepSeek & Qwen (DPDP Act 2023 + Rules 2025 G.S.R. 846(E)) by DPDPA Support (CynorSense)",
+  "type": "module",
+  "license": "MIT",
+  "author": "CynorSense Solutions Private Limited — DPDPA Support <dpdpa@cynorsense.com> (https://dpdpa.support)",
+  "homepage": "https://dpdpa.support/toolkits/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cyarun/dpdpa-website-dpia-skill.git"
+  },
+  "keywords": [
+    "dpdpa",
+    "dpdp-act-2023",
+    "dpdp-rules-2025",
+    "dpia",
+    "privacy-audit",
+    "claude-code-skill",
+    "gemini-skill",
+    "deepseek",
+    "qwen",
+    "india-privacy",
+    "cynorsense"
+  ],
+  "scripts": {
+    "audit": "node scripts/collect_website_dpia_telemetry.mjs",
+    "detect-automations": "node scripts/detect_automations_and_dark_patterns.mjs",
+    "parse-response": "node scripts/parse_multimodel_dpia_response.mjs",
+    "benchmark": "node scripts/run_multi_sector_benchmarks.mjs",
+    "eval:critic": "node eval/eval_dpia_skill_critic.mjs",
+    "eval:multimodel": "node eval/eval_multimodel_combinatorial.mjs",
+    "eval:automations": "node eval/eval_automation_detector.mjs",
+    "eval:statutory": "node eval/eval_statutory_and_reputation.mjs",
+    "eval:benchmarks": "node eval/eval_live_benchmarks.mjs",
+    "test": "node eval/eval_dpia_skill_critic.mjs && node eval/eval_multimodel_combinatorial.mjs && node eval/eval_automation_detector.mjs && node eval/eval_statutory_and_reputation.mjs && node eval/eval_live_benchmarks.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

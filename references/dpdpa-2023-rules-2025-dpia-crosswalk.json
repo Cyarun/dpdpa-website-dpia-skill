@@ -1,0 +1,548 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "crosswalk_metadata": {
+    "title": "DPDP Act, 2023 & DPDP Rules, 2025 (G.S.R. 846(E)) Website DPIA & Automation Readiness Crosswalk Reference",
+    "version": "2026.11.1",
+    "canonical_authority": "Tier-1 Statutory Ground Truth (MeitY Gazette Notifications G.S.R. 843(E) & G.S.R. 846(E))",
+    "purpose": "Deterministic legal-technical mapping for read-only website Data Protection Impact Assessment (DPIA), client-side automation inventory, algorithmic profiling risk assessment, and enterprise board reporting.",
+    "dpdp_act_2023_structure": {
+      "official_title": "The Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023)",
+      "presidential_assent_date": "2023-08-11",
+      "total_chapters": 9,
+      "total_sections": 44,
+      "total_schedules": 1,
+      "chapters_summary": [
+        { "chapter": "Chapter I", "sections": "Sections 1–3", "title": "Preliminary (Short title, commencement, definitions, application of Act)" },
+        { "chapter": "Chapter II", "sections": "Sections 4–10", "title": "Obligations of Data Fiduciary (Grounds, Notice, Consent, Legitimate Uses, General Obligations, Children's Data, Significant Data Fiduciaries)" },
+        { "chapter": "Chapter III", "sections": "Sections 11–15", "title": "Rights and Duties of Data Principal (Access, Correction/Erasure, Grievance Redressal, Nomination, Duties)" },
+        { "chapter": "Chapter IV", "sections": "Sections 16–17", "title": "Special Provisions (Processing of Personal Data Outside India, Exemptions)" },
+        { "chapter": "Chapter V", "sections": "Sections 18–26", "title": "Data Protection Board of India (Establishment, composition, officers, proceedings)" },
+        { "chapter": "Chapter VI", "sections": "Sections 27–28", "title": "Powers, Functions and Procedure to be Followed by Board" },
+        { "chapter": "Chapter VII", "sections": "Sections 29–32", "title": "Appeal and Alternate Dispute Resolution (TDSAT Appellate Tribunal, mediation, voluntary undertaking)" },
+        { "chapter": "Chapter VIII", "sections": "Sections 33–34", "title": "Penalties and Adjudication (Monetary penalties per The Schedule, crediting to Consolidated Fund of India)" },
+        { "chapter": "Chapter IX", "sections": "Sections 35–44", "title": "Miscellaneous (Protection of action in good faith, power to call for information, blocking directions, rule-making power under Section 40, amendments)" }
+      ],
+      "schedule_summary": {
+        "name": "The Schedule (See section 33(1))",
+        "penalties": [
+          { "entry": 1, "breach_description": "Breach in observing the obligation of Data Fiduciary to take reasonable security safeguards to prevent personal data breach under sub-section (5) of section 8", "max_penalty_inr": "INR 250 crore" },
+          { "entry": 2, "breach_description": "Breach in observing the obligation to give the Board or affected Data Principal notice of a personal data breach under sub-section (6) of section 8", "max_penalty_inr": "INR 200 crore" },
+          { "entry": 3, "breach_description": "Breach in observance of additional obligations in relation to children under section 9", "max_penalty_inr": "INR 200 crore" },
+          { "entry": 4, "breach_description": "Breach in observance of additional obligations of Significant Data Fiduciary under section 10", "max_penalty_inr": "INR 150 crore" },
+          { "entry": 5, "breach_description": "Breach in observance of the duties under section 15", "max_penalty_inr": "INR 10,000" },
+          { "entry": 6, "breach_description": "Breach of any term of voluntary undertaking accepted by the Board under section 32", "max_penalty_inr": "Up to the extent applicable for the breach in respect of which the proceedings under section 28 were instituted" },
+          { "entry": 7, "breach_description": "Breach of any other provision of this Act or the rules made thereunder", "max_penalty_inr": "INR 50 crore" }
+        ]
+      }
+    },
+    "dpdp_rules_2025_structure": {
+      "official_title": "The Digital Personal Data Protection Rules, 2025",
+      "gazette_reference": "G.S.R. 846(E)",
+      "commencement_notification_act": "G.S.R. 843(E)",
+      "notified_date": "2025-11-13",
+      "total_rules": 23,
+      "total_schedules": 7,
+      "phased_commencement_timeline": [
+        {
+          "phase": "Phase 1 — Immediate Upon Notification",
+          "effective_date": "2025-11-13",
+          "offset": "Day 0 (13 November 2025)",
+          "rules_in_force": ["Rule 1", "Rule 2", "Rule 17", "Rule 18", "Rule 19", "Rule 20", "Rule 21"],
+          "scope": "Short title and commencement, definitions, Data Protection Board establishment, salary/service conditions, digital office proceedings, and TDSAT appeal administration."
+        },
+        {
+          "phase": "Phase 2 — One Year From Notification (+1 yr)",
+          "effective_date": "2026-11-13",
+          "offset": "+1 year (13 November 2026)",
+          "rules_in_force": ["Rule 4"],
+          "scope": "Registration and obligations of Consent Managers (read with Section 6(9) and First Schedule)."
+        },
+        {
+          "phase": "Phase 3 — Eighteen Months From Notification (+18 mo)",
+          "effective_date": "2027-05-13",
+          "offset": "+18 months (13 May 2027)",
+          "rules_in_force": ["Rule 3", "Rule 5", "Rule 6", "Rule 7", "Rule 8", "Rule 9", "Rule 10", "Rule 11", "Rule 12", "Rule 13", "Rule 14", "Rule 15", "Rule 16", "Rule 22", "Rule 23"],
+          "scope": "Full operational obligations of Data Fiduciaries: Notice (Rule 3), State instrumentalities (Rule 5), Reasonable Security Safeguards (Rule 6), Breach Intimation (Rule 7), Data Retention & 1-Year Log Retention (Rule 8 + Third & Seventh Schedules), Contact Information (Rule 9), Children & Person with Disability Verifiable Consent (Rules 10–11 + Fourth Schedule), Exemptions (Rule 12), Annual DPIA & Algorithmic Software Risk Assessment (Rule 13), Data Principal Rights & 90-Day Grievance SLA (Rule 14), Cross-Border Transfers (Rule 15), Research/Statistical Exemption (Rule 16), Calling for Information & Blocking (Rules 22–23)."
+        }
+      ],
+      "schedules_summary": [
+        { "schedule": "First Schedule", "rule_reference": "Rule 4", "subject": "Conditions of registration and obligations of Consent Manager (Part A & Part B)" },
+        { "schedule": "Second Schedule", "rule_reference": "Rule 5", "subject": "Standards for processing of personal data by State and its instrumentalities under Section 7(b)" },
+        { "schedule": "Third Schedule", "rule_reference": "Rule 8(1)", "subject": "Class of Data Fiduciaries and time period for erasure of personal data where Data Principal does not approach Data Fiduciary (3-year inactivity retention rule & 48-hour advance notice)" },
+        { "schedule": "Fourth Schedule", "rule_reference": "Rule 10(2) & Rule 12", "subject": "Part A: Classes of Data Fiduciaries exempt from Section 9(1) & 9(3); Part B: Purposes exempt from Section 9(1) & 9(3) for children's data" },
+        { "schedule": "Fifth Schedule", "rule_reference": "Rule 17 / Rule 18", "subject": "Terms and conditions of service of Chairperson and other Members of the Data Protection Board of India" },
+        { "schedule": "Sixth Schedule", "rule_reference": "Rule 19", "subject": "Terms and conditions of appointment and service of officers and employees of the Data Protection Board of India" },
+        { "schedule": "Seventh Schedule", "rule_reference": "Rule 8(3) & Rule 22", "subject": "Purposes and minimum one-year retention of personal data, traffic data, and processing logs; authorised government agencies calling for information" }
+      ]
+    },
+    "hard_statutory_invariants": {
+      "grievance_redressal_sla_days": 90,
+      "grievance_redressal_citation": "Section 13(2) read with Rule 14(3) of the DPDP Rules, 2025 (G.S.R. 846(E)) — Data Fiduciary shall respond to grievances within a reasonable period not exceeding 90 days.",
+      "security_and_processing_log_retention_minimum": "Minimum 1 year",
+      "security_log_retention_citation": "Rule 8(3) read with Rule 6(1)(e) and Seventh Schedule of the DPDP Rules, 2025 (G.S.R. 846(E)) — minimum 1-year retention of processing logs and personal data before erasure unless another law requires longer.",
+      "dpia_and_algorithmic_risk_citation": "Section 10(2)(c)(ii) read with Rule 13(1), Rule 13(2), and Rule 13(3) of the DPDP Rules, 2025 (G.S.R. 846(E)) — annual DPIA, verification that algorithmic software deployed for hosting, storage, modification, or profiling does not pose a risk to the rights of Data Principals, and submission of key findings to the Board."
+    }
+  },
+  "statutory_provisions_catalog": [
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 4",
+      "act_section_title": "Grounds for processing personal data",
+      "rules_2025_reference": "Rule 3, Rule 5",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A person may process the personal data of a Data Principal only in accordance with the provisions of the Act and for a lawful purpose for which the Data Principal has given her consent (Section 4(1)(a)) or for certain legitimate uses (Section 4(1)(b)).",
+      "website_dpia_relevance": "Every client-side cookie, localStorage token, pixel, analytics beacon, session replay script, or form capture mechanism must map to either prior affirmative consent (Section 6) or a strictly bounded legitimate use (Section 7)."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 5",
+      "act_section_title": "Notice",
+      "rules_2025_reference": "Rule 3 (Notice by Data Fiduciary to Data Principal)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "Every request for consent under Section 6 shall be accompanied or preceded by an independent, clear, and plain-language notice (Rule 3(a)) containing an itemised description of personal data and the specific purpose and goods/services enabled (Rule 3(b)(i)-(ii)), plus a direct communication link and instructions to withdraw consent, exercise rights under Section 13, and make a complaint to the Board (Rule 3(c)(i)-(iii)), accessible in English or any language in the Eighth Schedule to the Constitution (Section 5(3)).",
+      "website_dpia_relevance": "Inspects whether the website consent banner and privacy notice are understandable independently, itemise personal data categories, state specific purposes, offer Eighth Schedule language accessibility, and link directly to withdrawal and grievance workflows."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 6",
+      "act_section_title": "Consent",
+      "rules_2025_reference": "Rule 3(c)(i) (Withdrawal ease) & Rule 4 (Consent Manager registration and obligations, First Schedule)",
+      "commencement_date": "2026-11-13 (Rule 4 Consent Manager) / 2027-05-13 (Section 6 operational consent)",
+      "statutory_requirement": "Consent shall be free, specific, informed, unconditional and unambiguous with a clear affirmative action, signify agreement to processing limited to what is necessary for the specified purpose (Section 6(1)), and the ease of withdrawing consent shall be comparable to the ease with which consent was given (Section 6(4), Rule 3(c)(i)). Upon withdrawal, Data Fiduciary and its Data Processors shall cease processing within a reasonable time (Section 6(6)). Burden of proof of valid consent rests on the Data Fiduciary (Section 6(10)).",
+      "website_dpia_relevance": "Inspects pre-consent firing of non-essential trackers, dark patterns (bundled consent, pre-ticked checkboxes, hidden reject controls), symmetry of Accept vs Reject/Withdraw UI actions, and readiness for interoperable Consent Manager signals (Rule 4)."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 7",
+      "act_section_title": "Certain legitimate uses",
+      "rules_2025_reference": "Rule 5 & Second Schedule",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "Permits processing without Section 6 consent only in narrowly specified cases, including voluntary provision of personal data by the Data Principal for a specified purpose where she has not indicated lack of consent (Section 7(a)), State functions/benefits (Section 7(b)), legal obligation, medical emergency, disaster, or employment purposes (Section 7(i)).",
+      "website_dpia_relevance": "Distinguishes user-initiated contact/support inquiries (Section 7(a) for the specific inquiry requested) from secondary marketing automation, CRM retargeting, or behavioural profiling, which always require separate affirmative consent under Section 6."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(1)–(2)",
+      "act_section_title": "General obligations of Data Fiduciary & engagement of Data Processors",
+      "rules_2025_reference": "Rule 6(1)(f) & Rule 15",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "The Data Fiduciary is responsible for complying with the Act and Rules irrespective of any agreement to the contrary (Section 8(1)) and may engage, appoint, use or otherwise involve a Data Processor to process personal data on its behalf only under a valid contract (Section 8(2)).",
+      "website_dpia_relevance": "Every third-party script, analytics vendor, CDN, tag manager, session replay tool, and AI chat widget embedded on the website acts as a Data Processor or third-party recipient requiring a valid Data Processing Agreement (DPA) with security and cessation clauses."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(3)",
+      "act_section_title": "Completeness, accuracy and consistency of personal data",
+      "rules_2025_reference": "Rule 14(1)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "Where personal data processed by a Data Fiduciary is likely to be used to make a decision that affects the Data Principal or is disclosed to another Data Fiduciary, the Data Fiduciary shall ensure its completeness, accuracy and consistency.",
+      "website_dpia_relevance": "Applies to website lead-scoring forms, automated eligibility calculators, credit/underwriting intake forms, and AI conversational agents that capture or infer attributes used in downstream decisions."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(4)",
+      "act_section_title": "Technical and organisational measures",
+      "rules_2025_reference": "Rule 6 & Rule 13",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A Data Fiduciary shall implement appropriate technical and organisational measures to ensure effective observance of the provisions of this Act and the rules made thereunder.",
+      "website_dpia_relevance": "Evaluates client-side consent gating architecture, Content Security Policy (CSP), Subresource Integrity (SRI) on third-party scripts, and automated governance controls."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(5)",
+      "act_section_title": "Reasonable security safeguards to prevent personal data breach",
+      "rules_2025_reference": "Rule 6 (Reasonable security safeguards)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A Data Fiduciary shall protect personal data in its possession or under its control, including in respect of any processing undertaken by it or on its behalf by a Data Processor, by taking reasonable security safeguards to prevent personal data breach. Rule 6(1) mandates encryption/obfuscation/masking/tokenisation (Rule 6(1)(a)), access controls (Rule 6(1)(b)), visibility through logs and monitoring for unauthorized access (Rule 6(1)(c)), continuity/backups (Rule 6(1)(d)), minimum 1-year log retention (Rule 6(1)(e)), processor contract security clauses (Rule 6(1)(f)), and organisational/technical enforcement measures (Rule 6(1)(g)). Maximum penalty: INR 250 crore (The Schedule, Entry 1).",
+      "website_dpia_relevance": "Inspects HTTPS/TLS enforcement, HSTS (`Strict-Transport-Security`), CSP (`Content-Security-Policy`), `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, cookie security flags (`Secure`, `HttpOnly`, `SameSite`), insecure form `action` targets, and third-party script integrity."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(6)",
+      "act_section_title": "Intimation of personal data breach",
+      "rules_2025_reference": "Rule 7 (Intimation of personal data breach)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "In the event of a personal data breach, the Data Fiduciary shall give the Board and each affected Data Principal intimation of such breach. Under Rule 7(1), affected Data Principals must be notified without delay with a concise, clear description of the breach, consequences, mitigation measures, safety steps, and business contact details; under Rule 7(2), the Board must receive immediate initial intimation without delay and a detailed report within 72 hours (or longer permitted period). Maximum penalty: INR 200 crore (The Schedule, Entry 2).",
+      "website_dpia_relevance": "Evaluates whether security incident/vulnerability reporting contacts (`security.txt` or privacy/DPO incident channel) and client-side script monitoring (e.g., CSP `report-uri`/`report-to` against Magecart/formjacking) are observable."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(7)–(8)",
+      "act_section_title": "Erasure of personal data, retention limits, and minimum 1-year log retention",
+      "rules_2025_reference": "Rule 8(1)–(3), Third Schedule, and Seventh Schedule",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A Data Fiduciary shall erase personal data upon consent withdrawal or as soon as it is reasonable to assume that the specified purpose is no longer being served, whichever is earlier, and cause its Data Processor to erase it (Section 8(7)). Under Rule 8(1) and Third Schedule, covered high-volume Data Fiduciaries must erase data after 3 years of inactivity after giving at least 48 hours advance notice (Rule 8(2)). Crucially, under Rule 8(3) read with the Seventh Schedule, every Data Fiduciary shall retain personal data, associated traffic data, and logs of processing for a minimum period of one year from the date of processing before erasure.",
+      "website_dpia_relevance": "Inspects cookie `Max-Age`/`Expires` lifetimes (flagging excessive multi-year tracking cookies), privacy notice disclosure of retention schedules, and alignment with the mandatory minimum 1-year processing log retention under Rule 8(3) + Seventh Schedule."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(9)",
+      "act_section_title": "Publication of business contact information of DPO or authorised person",
+      "rules_2025_reference": "Rule 9 (Contact information of person to answer questions about processing)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A Data Fiduciary shall publish the business contact information of a Data Protection Officer, if applicable, or a person who is able to answer on behalf of the Data Fiduciary the questions of the Data Principal about the processing of her personal data. Rule 9 requires prominent publication on the website or app and inclusion in every response to a Data Principal exercising rights.",
+      "website_dpia_relevance": "Inspects the website privacy policy, footer, and contact pages for a prominently published DPO or Privacy Grievance Officer name/designation, email address, and business contact details."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 8(10)",
+      "act_section_title": "Establishment of effective grievance redressal mechanism",
+      "rules_2025_reference": "Rule 14(3)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A Data Fiduciary shall establish an effective mechanism to redress the grievances of Data Principals.",
+      "website_dpia_relevance": "Inspects whether an accessible grievance submission channel or form is published on the website with clear SLA expectations."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 9",
+      "act_section_title": "Processing of personal data of children and persons with disability",
+      "rules_2025_reference": "Rule 10 (Verifiable consent for child), Rule 11 (Verifiable consent for person with disability with lawful guardian), & Fourth Schedule",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "Before processing any personal data of a child (under 18 years, Section 2(f)) or a person with disability who has a lawful guardian, the Data Fiduciary shall obtain verifiable consent of the parent or lawful guardian (Section 9(1), Rules 10–11). A Data Fiduciary shall not undertake processing likely to cause any detrimental effect on the well-being of a child (Section 9(2)) and shall not undertake tracking or behavioural monitoring of children or targeted advertising directed at children (Section 9(3)), subject only to narrow exemptions in the Fourth Schedule (Rule 12). Maximum penalty: INR 200 crore (The Schedule, Entry 3).",
+      "website_dpia_relevance": "Inspects age-gating/parental verification flows on youth-accessible or general-audience portals and verifies that behavioral monitoring, session replay, and ad-tech retargeting pixels are disabled for child sessions."
+    },
+    {
+      "act_chapter": "Chapter II — Obligations of Data Fiduciary",
+      "act_section": "Section 10 & Section 10(2)(c)(ii)",
+      "act_section_title": "Additional obligations of Significant Data Fiduciary — DPIA & Algorithmic Software Risk Assessment",
+      "rules_2025_reference": "Rule 13(1), Rule 13(2), Rule 13(3), and Rule 13(4)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "Significant Data Fiduciaries must appoint an India-based DPO (Section 10(2)(a)), appoint an independent data auditor (Section 10(2)(b)), and undertake periodic Data Protection Impact Assessments (Section 10(2)(c)(i)). Under Rule 13(1), the DPIA and audit must be undertaken once in every period of twelve months from notification as an SDF. Under Rule 13(2), a Significant Data Fiduciary shall observe due diligence to verify that algorithmic software deployed by it for hosting, display, uploading, modification, publishing, transmission, storage, updating or sharing of personal data processed by it are not likely to pose a risk to the rights of Data Principals. Under Rule 13(3), the DPO/auditor submits a report containing significant observations to the Board.",
+      "website_dpia_relevance": "Core mandate of the Website DPIA Skill: inventories all client-side automations, AI chatbots, personalization engines, CDPs, session replay scripts, and ad-tech auto-advanced matching to evaluate algorithmic profiling and automated processing risks under Rule 13(2) and structured DPIA criteria under Section 10(2)(c)(ii) & Rule 13(1)–(3)."
+    },
+    {
+      "act_chapter": "Chapter III — Rights and Duties of Data Principal",
+      "act_section": "Section 11",
+      "act_section_title": "Right to access information about personal data",
+      "rules_2025_reference": "Rule 14(1)–(2)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "The Data Principal has the right to obtain a summary of personal data being processed and the processing activities, and the identities of all other Data Fiduciaries and Data Processors with whom the personal data has been shared along with a description of the personal data shared.",
+      "website_dpia_relevance": "Inspects whether the website publishes a clear mechanism (and identifier requirements per Rule 14(1)) for Data Principals to request a summary of their data and third-party processor disclosures."
+    },
+    {
+      "act_chapter": "Chapter III — Rights and Duties of Data Principal",
+      "act_section": "Section 12",
+      "act_section_title": "Right to correction and erasure of personal data",
+      "rules_2025_reference": "Rule 14(1)–(2)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "The Data Principal has the right to correction, completion, updating, and erasure of her personal data for the processing of which she has previously given consent.",
+      "website_dpia_relevance": "Inspects whether the website provides self-service or structured request channels for correction, updating, and erasure."
+    },
+    {
+      "act_chapter": "Chapter III — Rights and Duties of Data Principal",
+      "act_section": "Section 13",
+      "act_section_title": "Right of grievance redressal (90-Day Statutory Maximum SLA)",
+      "rules_2025_reference": "Rule 14(3) (Grievance redressal period not exceeding 90 days)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A Data Principal shall have the right to have readily available means of grievance redressal provided by a Data Fiduciary or Consent Manager (Section 13(1)). Under Section 13(2) read with Rule 14(3), the Data Fiduciary or Consent Manager shall respond to any grievances within a period not exceeding 90 days (and publish its timeline and technical/organisational measures for effective observance). Exhaustion of this grievance opportunity is a prerequisite before approaching the Board (Section 13(3)).",
+      "website_dpia_relevance": "Inspects whether the website states a grievance resolution SLA aligned with the statutory maximum of 90 days under Rule 14(3) and provides a functional grievance submission path."
+    },
+    {
+      "act_chapter": "Chapter III — Rights and Duties of Data Principal",
+      "act_section": "Section 14",
+      "act_section_title": "Right to nominate",
+      "rules_2025_reference": "Rule 14(4)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "A Data Principal shall have the right to nominate any other individual who shall, in the event of death or incapacity of the Data Principal, exercise the rights of the Data Principal in accordance with the Act and Rule 14(4).",
+      "website_dpia_relevance": "Inspects whether the privacy notice and rights portal reference the right to nominate under Section 14 and Rule 14(4)."
+    },
+    {
+      "act_chapter": "Chapter IV — Special Provisions",
+      "act_section": "Section 16",
+      "act_section_title": "Processing of personal data outside India (Cross-Border Transfers)",
+      "rules_2025_reference": "Rule 15 (Transfer of personal data outside India)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "The Central Government may by notification restrict the transfer of personal data by a Data Fiduciary for processing to such country or territory outside India as may be notified (Section 16(1)). Under Rule 15, any transfer of personal data outside India by a Data Fiduciary is subject to meeting such requirements as the Central Government may by general or special order specify in respect of making personal data available to any foreign State or its agency/authority.",
+      "website_dpia_relevance": "Maps every third-party domain, CDN, analytics endpoint, CRM webhook, AI API, and ad-tech collector loaded by the website to its primary jurisdiction and recommends cross-border transfer governance and processor clauses."
+    },
+    {
+      "act_chapter": "Chapter IV — Special Provisions",
+      "act_section": "Section 17",
+      "act_section_title": "Exemptions",
+      "rules_2025_reference": "Rule 12 & Rule 16 (Exemption for research, archiving or statistical purposes)",
+      "commencement_date": "2027-05-13",
+      "statutory_requirement": "Sets out statutory exemptions (e.g., enforcement of legal rights, judicial functions, prevention/investigation of offences, approved mergers/restructuring, and research/archiving/statistical processing meeting Rule 16 standards where data is not used to make any decision specific to a Data Principal).",
+      "website_dpia_relevance": "Clarifies that commercial website analytics, session replay, and marketing attribution personalize or profile specific users/devices and therefore cannot claim the Section 17(2)(b) / Rule 16 statistical exemption."
+    }
+  ],
+  "website_investigation_checks_crosswalk": [
+    {
+      "check_id": "CHK-01",
+      "pillar": "Notice & Transparency (Sec 5 / Rule 3)",
+      "check_name": "Standalone, Itemised Pre-Consent Notice & Purpose Specificity",
+      "observable_website_signals": [
+        "Presence of privacy notice / consent banner DOM prior to data collection",
+        "Itemised listing of personal data categories and specific goods/services enabled",
+        "Independence and legibility of notice without buried cross-document incorporation"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 5(1)(i)–(iii), Section 5(2)",
+      "dpdp_rules_2025_citation": "Rule 3(a), Rule 3(b)(i)–(ii) of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.2.2 (Identify and document purpose) & Clause 7.3.2 (Determining and fulfilling obligations to PII principals — Notice)",
+        "iso_iec_29134_dpia": "Clause 6.4.2 (Describe the information flows and transparency controls)",
+        "nist_privacy_framework": "CT.PO-P1 & CM.AW-P1 (Communicate data processing purposes and practices clearly to individuals)"
+      }
+    },
+    {
+      "check_id": "CHK-02",
+      "pillar": "Notice & Transparency (Sec 5 / Rule 3)",
+      "check_name": "Eighth Schedule Language Accessibility & Direct Rights/Board Links",
+      "observable_website_signals": [
+        "Language switcher or multilingual notice availability (English + Eighth Schedule languages)",
+        "Direct link in notice to withdraw consent, exercise Section 13 grievance redressal, and complain to the Data Protection Board"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 5(1)(ii)–(iii), Section 5(3), Section 6(3)",
+      "dpdp_rules_2025_citation": "Rule 3(c)(i)–(iii) of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.3.3 (Providing information to PII principals in accessible form)",
+        "iso_iec_29134_dpia": "Clause 6.5.3 (Assessment of privacy controls for stakeholder comprehension)",
+        "nist_privacy_framework": "CM.AW-P2 (Mechanisms for individuals to understand and exercise privacy choices)"
+      }
+    },
+    {
+      "check_id": "CHK-03",
+      "pillar": "Consent & Dark-Pattern Symmetry (Sec 6 / Rules 3-4)",
+      "check_name": "Zero Pre-Consent Firing of Non-Essential Cookies, Storage & Trackers",
+      "observable_website_signals": [
+        "`document.cookie` entries set on initial page load before user interaction",
+        "`localStorage`, `sessionStorage`, `IndexedDB`, and `ServiceWorker` registrations created prior to affirmative consent",
+        "Third-party network requests fired during initial render before CMP opt-in"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 4(1)(a), Section 6(1), Section 6(10)",
+      "dpdp_rules_2025_citation": "Rule 3(c)(i) & Rule 4 (First Schedule) of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.2.3 (Obtain and record consent before processing)",
+        "iso_iec_29134_dpia": "Clause 6.4.3 (Identification of privacy threats from unauthorized pre-consent collection)",
+        "nist_privacy_framework": "GV.PO-P2 & CT.DM-P2 (Data processing gated on valid authorization)"
+      }
+    },
+    {
+      "check_id": "CHK-04",
+      "pillar": "Consent & Dark-Pattern Symmetry (Sec 6 / Rules 3-4)",
+      "check_name": "Consent UI Symmetry, Withdrawal Parity & Dark-Pattern Absence",
+      "observable_website_signals": [
+        "Visual and interaction parity between 'Accept' and 'Reject / Manage' buttons in CMP banner",
+        "Absence of pre-ticked consent checkboxes (`input[type=checkbox][checked]`) on lead/signup forms",
+        "Persistent footer or account control enabling one-click consent withdrawal comparable to opt-in ease",
+        "Readiness for interoperable Consent Manager hooks (Rule 4 effective 13 Nov 2026)"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 6(1), Section 6(4), Section 6(6), Section 6(9)",
+      "dpdp_rules_2025_citation": "Rule 3(c)(i) & Rule 4 (read with First Schedule) of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.3.4 (Providing mechanism to modify or withdraw consent)",
+        "iso_iec_29134_dpia": "Clause 6.5.2 (Treatment of consent coercion / asymmetric choice risks)",
+        "nist_privacy_framework": "CM.AW-P4 (Enable individuals to revoke or update preferences seamlessly)"
+      }
+    },
+    {
+      "check_id": "CHK-05",
+      "pillar": "Website Automations, AI & Profiling (Sec 6 / Rule 13(2))",
+      "check_name": "Marketing, CRM, CDP & Tag Manager Client-Side Automation Inventory",
+      "observable_website_signals": [
+        "Tag Managers & CDPs (GTM, Adobe Launch, Tealium, Segment, RudderStack, mParticle)",
+        "Marketing & CRM automations (HubSpot, Marketo, Pardot, Salesforce, Zoho PageSense/SalesIQ, LeadSquared, WebEngage, MoEngage, CleverTap, Braze, Klaviyo, ActiveCampaign)"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 6(1), Section 8(2), Section 8(3), Section 10(2)(c)(ii)",
+      "dpdp_rules_2025_citation": "Rule 13(1), Rule 13(2), Rule 13(3) of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.2.6 (Automated decision-making and profiling controls) & Clause 7.5.2 (Sharing and transfer of PII)",
+        "iso_iec_29134_dpia": "Clause 6.4.4 (Privacy risk assessment of automated profiling and behavioral pipelines)",
+        "nist_privacy_framework": "CT.DP-P1 & PR.DS-P5 (Governance of automated data processing and profiling pipelines)"
+      }
+    },
+    {
+      "check_id": "CHK-06",
+      "pillar": "Website Automations, AI & Profiling (Sec 6 / Rule 13(2))",
+      "check_name": "Session Replay, Heatmaps, AI Chatbots & Ad-Tech Auto-Advanced Matching",
+      "observable_website_signals": [
+        "Session Replay & Heatmaps (Microsoft Clarity, Hotjar, FullStory, LogRocket, PostHog, Smartlook, Mouseflow, Contentsquare, VWO, Optimizely) and DOM input masking attributes (`data-private`, `fs-mask`)",
+        "AI Chatbots & Support Widgets (Intercom, Drift, Zendesk, Freshchat, Tidio, Crisp, Yellow.ai, Haptik,Verloop, Botpress, Voiceflow, OpenAI/Anthropic web embeds)",
+        "Ad-Tech Pixels & Auto-Advanced Matching (Meta Pixel `fbevents.js`, Google Ads/Floodlight, LinkedIn Insight, X/TikTok/Snap/Reddit/Criteo/Taboola/Outbrain)",
+        "Early form-field keystroke/blur listeners (`addEventListener('input'|'blur')`), canvas/WebGL fingerprinting, and `navigator.sendBeacon`"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 6(1), Section 8(5), Section 10(2)(c)(ii)",
+      "dpdp_rules_2025_citation": "Rule 6(1)(a), Rule 13(1), Rule 13(2), Rule 13(3) of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.4.2 (Limit collection) & Clause 7.4.5 (De-identification and masking of PII at source)",
+        "iso_iec_29134_dpia": "Clause 6.4.5 (Evaluation of intrusive telemetry, keystroke capture, and algorithmic software risk)",
+        "nist_privacy_framework": "CT.DM-P4 & PR.PO-P3 (Disassociability and input masking in behavioral analytics and AI interfaces)"
+      }
+    },
+    {
+      "check_id": "CHK-07",
+      "pillar": "Reasonable Security Safeguards (Sec 8(5) / Rule 6)",
+      "check_name": "Transport Security, HTTP Hardening Headers, Cookie Flags & 1-Year Log Retention Readiness",
+      "observable_website_signals": [
+        "HTTPS enforcement, HSTS (`Strict-Transport-Security`), `Content-Security-Policy` (CSP), `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`",
+        "Cookie security flags (`Secure`, `HttpOnly`, `SameSite`) and lifetime alignment",
+        "Subresource Integrity (`integrity` attribute) on external `<script>` tags and absence of insecure HTTP form `action` URLs",
+        "Governance alignment with minimum 1-year processing and traffic log retention under Rule 8(3) + Seventh Schedule"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 8(4), Section 8(5), Section 8(6), Section 8(7), and The Schedule (Entry 1: up to INR 250 crore; Entry 2: up to INR 200 crore)",
+      "dpdp_rules_2025_citation": "Rule 6(1)(a)–(g), Rule 7(1)–(2), Rule 8(1)–(3), Third Schedule, and Seventh Schedule of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 6.10 (Cryptography), Clause 6.12.4 (Logging and monitoring), Clause 6.14 (System acquisition, development and maintenance)",
+        "iso_iec_29134_dpia": "Clause 6.5.1 (Selection of security and privacy safeguard controls)",
+        "nist_privacy_framework": "PR.DS-P1 (Data-at-rest and data-in-transit protection) & DE.AE-P1 (Audit logging and monitoring)"
+      }
+    },
+    {
+      "check_id": "CHK-08",
+      "pillar": "Children's Data Protection (Sec 9 / Rules 10-11)",
+      "check_name": "Verifiable Parental/Guardian Consent & Prohibition of Child Behavioral Tracking",
+      "observable_website_signals": [
+        "Age-assurance or verifiable parental consent flow (Rule 10) and lawful guardian verification for persons with disability (Rule 11)",
+        "Suppression of behavioral monitoring, session replay, and targeted advertising scripts on child/student-facing pages"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 9(1), Section 9(2), Section 9(3), and The Schedule (Entry 3: up to INR 200 crore)",
+      "dpdp_rules_2025_citation": "Rule 10, Rule 11, Rule 12, and Fourth Schedule of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.2.4 (Special conditions for children and vulnerable PII principals)",
+        "iso_iec_29134_dpia": "Clause 6.4.6 (Impact assessment for vulnerable populations and minors)",
+        "nist_privacy_framework": "ID.RA-P3 (Contextual risk assessment for vulnerable data subjects)"
+      }
+    },
+    {
+      "check_id": "CHK-09",
+      "pillar": "Grievance Redressal & 90-Day SLA (Sec 13 / Rule 14(3))",
+      "check_name": "Published DPO/Privacy Contact, Rights Workflow & 90-Day Grievance SLA",
+      "observable_website_signals": [
+        "Prominent publication of DPO or authorised privacy contact person name/designation, email, and business address (Section 8(9), Rule 9)",
+        "Accessible Data Principal rights workflow covering access (Section 11), correction/erasure (Section 12), grievance redressal (Section 13), and nomination (Section 14)",
+        "Explicit publication of grievance resolution timeframe not exceeding 90 days (Rule 14(3))"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 8(9), Section 8(10); Chapter III, Section 11, Section 12, Section 13(1)–(3), Section 14",
+      "dpdp_rules_2025_citation": "Rule 9 & Rule 14(1)–(4) (specifically Rule 14(3) 90-day maximum grievance SLA) of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.3.1 (Determining and fulfilling obligations to PII principals) & Clause 7.3.6 (Handling complaints and requests)",
+        "iso_iec_29134_dpia": "Clause 6.5.4 (Redress and accountability mechanisms)",
+        "nist_privacy_framework": "GV.MT-P1 & CM.AW-P3 (Individual rights fulfillment and complaint resolution SLAs)"
+      }
+    },
+    {
+      "check_id": "CHK-10",
+      "pillar": "Cross-Border Sub-Processors (Sec 16 / Rule 15)",
+      "check_name": "Third-Party Sub-Processor & Cross-Border Endpoint Governance Register",
+      "observable_website_signals": [
+        "Inventory of all external script, API, font, CDN, analytics, CRM, and AI endpoints loaded by the browser",
+        "Mapping of vendor identity, processing category, pre-consent load status, and primary processing jurisdiction"
+      ],
+      "dpdp_act_2023_citation": "Chapter II, Section 8(2); Chapter IV, Section 16(1)–(2)",
+      "dpdp_rules_2025_citation": "Rule 6(1)(f) & Rule 15 of G.S.R. 846(E)",
+      "international_standards_crosswalk": {
+        "iso_iec_27701": "Clause 7.5.1 (Identify basis for transfer of PII between jurisdictions) & Clause 7.5.3 (Records of transfer of PII)",
+        "iso_iec_29134_dpia": "Clause 6.4.2 (Cross-border data flow mapping and third-party risk evaluation)",
+        "nist_privacy_framework": "ID.DE-P2 (Third-party ecosystem and cross-border data flow governance)"
+      }
+    }
+  ],
+  "sector_specific_dpia_profiles": [
+    {
+      "sector_id": "BFSI_FINTECH",
+      "sector_name": "Banking, Financial Services, Insurance & FinTech",
+      "primary_website_automations_observed": [
+        "Loan/credit eligibility calculators and early-field capture listeners",
+        "Video-KYC / CKYC onboarding flows and session replay scripts",
+        "Transactional & behavioural analytics, chatbots, and retargeting pixels"
+      ],
+      "key_statutory_focus": "Section 8(3) accuracy for credit/eligibility decisions, Section 8(5) + Rule 6 encryption/masking on financial forms, Rule 8(3) + Seventh Schedule minimum 1-year log retention, and Rule 13(2) algorithmic software risk assessment for automated scoring/onboarding."
+    },
+    {
+      "sector_id": "ECOMMERCE_D2C_RETAIL",
+      "sector_name": "E-Commerce, D2C Brands & Retail Marketplaces",
+      "primary_website_automations_observed": [
+        "Abandoned-cart email/WhatsApp triggers (Klaviyo, WebEngage, MoEngage, CleverTap)",
+        "Meta Pixel / Google Ads auto-advanced matching and cross-site retargeting",
+        "Session replay & heatmaps (Clarity, Hotjar) on checkout pages"
+      ],
+      "key_statutory_focus": "Section 5 + Rule 3 itemised notice, Section 6 pre-consent gating of marketing pixels, Rule 8(1) + Third Schedule 3-year inactivity erasure rule for high-volume e-commerce fiduciaries, and Rule 14(3) 90-day grievance SLA."
+    },
+    {
+      "sector_id": "HEALTHTECH_PHARMA_DIAGNOSTICS",
+      "sector_name": "Healthcare, Telemedicine, Diagnostics & Digital Health",
+      "primary_website_automations_observed": [
+        "Symptom checkers, AI triage chatbots, and appointment booking forms",
+        "Third-party analytics or ad pixels firing on condition/specialty URLs (revealing health inferences via URL path/referrer)"
+      ],
+      "key_statutory_focus": "Strict `Referrer-Policy: same-origin` or `no-referrer` on clinical pages (Section 8(5) + Rule 6), zero ad-tech pixel firing on health inquiry URLs (Section 6), verifiable consent for minors/PwD (Section 9 + Rules 10–11), and Rule 13(2) algorithmic risk verification for clinical chatbots."
+    },
+    {
+      "sector_id": "EDTECH_K12_HIGHER_ED",
+      "sector_name": "EdTech, K-12 Portals, Test Prep & Universities",
+      "primary_website_automations_observed": [
+        "Student lead-capture forms, counseling chatbots, and behavioural analytics",
+        "Video engagement trackers and remarketing tags on minor-accessible courses"
+      ],
+      "key_statutory_focus": "Section 9(1) + Rule 10 verifiable parental consent, Section 9(3) strict prohibition on tracking, behavioural monitoring, and targeted advertising directed at children (read with Fourth Schedule exemptions), and Rule 13 DPIA."
+    },
+    {
+      "sector_id": "SAAS_AI_B2B_ENTERPRISE",
+      "sector_name": "B2B SaaS, AI Platforms & Developer Cloud Portals",
+      "primary_website_automations_observed": [
+        "Product-led growth (PLG) telemetry (Segment, PostHog, Mixpanel, Amplitude)",
+        "Conversational AI sales agents (Intercom Fin, Drift, custom LLM widgets) and CRM enrichment (HubSpot, Clearbit/Apollo)"
+      ],
+      "key_statutory_focus": "Section 6 consent gating for behavioural telemetry, Section 8(2) + Rule 6(1)(f) sub-processor contract registry, Section 16 + Rule 15 cross-border transfer mapping, and Rule 13(2) algorithmic software risk verification."
+    }
+  ],
+  "reputation_safety_and_advisory_framing_policy": {
+    "policy_objective": "Every output produced by the Website DPIA Audit Skill must read as a constructive, board-ready, peer-to-peer legal-technical readiness assessment. It must never accuse, defame, disparage, or make speculative claims about backend or internal systems that cannot be observed from passive client-side inspection.",
+    "approved_readiness_tiers": [
+      {
+        "tier": "Aligned",
+        "meaning": "Publicly observable client-side signals align with the applicable DPDP Act, 2023 and DPDP Rules, 2025 (G.S.R. 846(E)) control objective.",
+        "approved_template_pattern": "Observed [technical signal] on [target_url], demonstrating alignment with [Statutory Citation]. To maintain continuous readiness ahead of the 13 May 2027 operational milestone, periodic regression verification is recommended."
+      },
+      {
+        "tier": "Advisory Enhancement",
+        "meaning": "Foundational controls are present, and targeted configuration refinements are recommended to strengthen demonstrable statutory readiness.",
+        "approved_template_pattern": "Observed [technical signal]. To strengthen demonstrable readiness under [Statutory Citation], consider enhancing [specific control] by implementing [recommended engineering action]."
+      },
+      {
+        "tier": "Priority Readiness Action",
+        "meaning": "An observable client-side signal (such as pre-consent tracker firing, missing notice element, or unmasked session replay) warrants prioritized engineering and DPO review ahead of full operational enforcement.",
+        "approved_template_pattern": "During read-only client-side inspection of [target_url], [observed technical signal] was detected prior to affirmative consent interaction. To align with [Statutory Citation] ahead of the 13 May 2027 operational enforcement date, engineering teams are advised to [recommended engineering fix]."
+      }
+    ],
+    "mandatory_scope_qualifier": "This report is a confidential, read-only technical DPIA readiness assessment based solely on publicly observable client-side website signals at the timestamp of inspection. It does not constitute a legal opinion or statutory certification, and makes no representation regarding backend/internal organisational controls.",
+    "forbidden_accusatory_regex_tokens": [
+      "\\billegal\\b",
+      "\\bunlawful\\b",
+      "\\bbreaking\\s+the\\s+law\\b",
+      "\\bviolates\\s+the\\s+law\\b",
+      "\\bguilty\\b",
+      "\\bcriminal\\b",
+      "\\bfraudulent\\b",
+      "\\bscam\\b",
+      "\\bmalicious\\b",
+      "\\bstolen\\s+data\\b",
+      "\\bstealing\\s+data\\b",
+      "\\bspying\\b",
+      "\\bsurveillance\\s+capitalism\\b",
+      "\\bnegligent\\b",
+      "\\breckless\\b",
+      "\\bextortion\\b",
+      "\\bshameful\\b",
+      "\\bblatant\\s+violation\\b",
+      "\\bwill\\s+be\\s+fined\\b"
+    ],
+    "forbidden_statutory_myth_patterns": [
+      {
+        "myth_id": "MYTH-SLA-30-OR-7-DAYS",
+        "description": "Claiming that the DPDP Act/Rules grievance redressal SLA is 30 days or 7 days (e.g., '30-day grievance', '7-day grievance', 'within 30 days under Rule 14'). Ground truth is strictly not exceeding 90 days under Section 13(2) read with Rule 14(3)."
+      },
+      {
+        "myth_id": "MYTH-ACT-STRUCTURE",
+        "description": "Citing anything other than 9 Chapters, 44 Sections, and 1 Schedule for the DPDP Act, 2023."
+      },
+      {
+        "myth_id": "MYTH-RULES-STRUCTURE",
+        "description": "Citing anything other than 23 Rules and 7 Schedules notified on 13 November 2025 under G.S.R. 846(E) for the DPDP Rules, 2025."
+      },
+      {
+        "myth_id": "MYTH-LOG-RETENTION-UNDER-1-YEAR",
+        "description": "Claiming security/processing log retention is less than 1 year (e.g., 30, 90, or 180 days minimum). Ground truth is minimum 1 year under Rule 8(3) read with the Seventh Schedule."
+      }
+    ]
+  }
+}

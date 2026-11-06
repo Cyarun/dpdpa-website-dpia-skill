@@ -1,0 +1,247 @@
+{
+  "slug": "razorpay",
+  "sector": "Fintech / Payments",
+  "entity_label": "Razorpay (Fintech & Payment Gateway)",
+  "target_url": "https://razorpay.com",
+  "canonical_domain": "razorpay.com",
+  "evaluated_at_utc": "2026-11-06T08:34:03.132Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://razorpay.com/",
+    "response_time_ms": 404,
+    "html_bytes": 2908199,
+    "security_headers": {
+      "strict_transport_security": "max-age=315360000; includeSubDomains",
+      "content_security_policy": null,
+      "x_frame_options": "SAMEORIGIN",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": null,
+      "permissions_policy": null,
+      "server": "CloudFront",
+      "cf_ray": null,
+      "x_cache": "Hit from cloudfront"
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 6,
+    "first_party_count": 6,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 0,
+    "cookies": [
+      {
+        "name": "ab_user_id",
+        "domain": "razorpay.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "additional-cache-params",
+        "domain": "razorpay.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "visit_time_stamp",
+        "domain": "razorpay.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "cloudfront_viewer_country",
+        "domain": "razorpay.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": true,
+        "same_site": "Lax",
+        "expiry_days": 0.2,
+        "set_before_consent": true
+      },
+      {
+        "name": "cloudfront_viewer_country_region",
+        "domain": "razorpay.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": true,
+        "same_site": "Lax",
+        "expiry_days": 0.2,
+        "set_before_consent": true
+      },
+      {
+        "name": "cloudfront_viewer_country_region_name",
+        "domain": "razorpay.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": true,
+        "same_site": "Lax",
+        "expiry_days": 0.2,
+        "set_before_consent": true
+      }
+    ]
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 5,
+    "script_urls": [
+      "https://www.googletagmanager.com/gtag/js?id=G-F42RZ69DW8",
+      "https://events.framer.com/script?v=2",
+      "https://framerusercontent.com/sites/4ejO0XSNntUWAG6MAFfjPp/script_main.QaveykWu.mjs",
+      "https://razorpay.com/build/razorAnalyticsFramer.js",
+      "https://accounts.razorpay.com/registersw.min.js"
+    ],
+    "third_party_domains_count": 8,
+    "third_party_domains": [
+      {
+        "domain": "www.googletagmanager.com",
+        "asset_count": 1,
+        "sample_url": "https://www.googletagmanager.com/gtag/js?id=G-F42RZ69DW8"
+      },
+      {
+        "domain": "events.framer.com",
+        "asset_count": 1,
+        "sample_url": "https://events.framer.com/script?v=2"
+      },
+      {
+        "domain": "framerusercontent.com",
+        "asset_count": 13,
+        "sample_url": "https://framerusercontent.com/sites/4ejO0XSNntUWAG6MAFfjPp/script_main.QaveykWu.mjs"
+      },
+      {
+        "domain": "cdn.segment.com",
+        "asset_count": 2,
+        "sample_url": "https://cdn.segment.com/"
+      },
+      {
+        "domain": "sentry-cdn.com",
+        "asset_count": 1,
+        "sample_url": "https://sentry-cdn.com/"
+      },
+      {
+        "domain": "clarity.ms",
+        "asset_count": 1,
+        "sample_url": "https://clarity.ms/"
+      },
+      {
+        "domain": "browser.sentry-cdn.com",
+        "asset_count": 2,
+        "sample_url": "https://browser.sentry-cdn.com/"
+      },
+      {
+        "domain": "fonts.gstatic.com",
+        "asset_count": 1,
+        "sample_url": "https://fonts.gstatic.com/"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 4,
+    "marketing_and_crm_automations": [],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Tag Manager (GTM)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "Script URL: https://www.googletagmanager.com/gtag/js?id=G-F42RZ69DW8",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Orchestrates client-side event routing and third-party tag firing; requires consent gating under Section 6 and Rule 3 prior to non-essential telemetry dispatch.",
+        "advisory_governance_action": "Configure Google Tag Manager Consent Mode v2 with default denied state for analytics_storage and ad_storage until affirmative Data Principal consent is recorded."
+      },
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "Script URL: https://www.googletagmanager.com/gtag/js?id=G-F42RZ69DW8",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      },
+      {
+        "vendor_name": "Segment / RudderStack CDP",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "DOM/Script signature match: cdn.segment.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Synchronizes user traits and behavioral events across downstream marketing and analytics destinations (Rule 13(2) profiling relevance).",
+        "advisory_governance_action": "Bind CDP middleware to the Consent Management Platform (CMP) category preferences prior to dispatching identify() or track() payloads."
+      }
+    ],
+    "session_replay_and_heatmaps": [
+      {
+        "vendor_name": "Microsoft Clarity",
+        "automation_category": "Session Replay & Behavioral Heatmap",
+        "matched_signal": "DOM/Script signature match: clarity.ms/tag",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Captures DOM mutations, scroll heatmaps, and interaction telemetry; high relevance to Section 8(5) input masking and Rule 13(2).",
+        "advisory_governance_action": "Enforce strict DOM input masking for all personal data fields and delay script load until analytics consent is granted."
+      }
+    ],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": []
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [],
+    "has_reject_or_manage_option_in_dom": false,
+    "forms_inspected_count": 0,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": true
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 4,
+    "privacy_notice_links": [
+      {
+        "url": "https://razorpay.com/terms/90-day-free-pg-offer/",
+        "label": "*T&amp;C apply"
+      },
+      {
+        "url": "https://razorpay.com/terms/rsl",
+        "label": "Website Terms"
+      },
+      {
+        "url": "https://razorpay.com/tnc/",
+        "label": "Terms of Use"
+      },
+      {
+        "url": "https://razorpay.com/privacy/",
+        "label": "Privacy Policy"
+      }
+    ],
+    "grievance_links_count": 1,
+    "grievance_links": [
+      {
+        "url": "https://razorpay.com/grievance-redressal/",
+        "label": "Grievance Redressal"
+      }
+    ],
+    "privacy_policy_passive_check": {
+      "inspected_url": "https://razorpay.com/privacy/",
+      "status": 200,
+      "grievance_officer_mentioned": true,
+      "dpo_contact_mentioned": true,
+      "ninety_day_sla_mentioned": true,
+      "retention_mentioned": false,
+      "cross_border_mentioned": true,
+      "children_data_mentioned": false
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "captured_at_utc": "2026-11-06T08:35:43.600Z",
+  "collection_method": "node-passive-http-dom-inspector",
+  "target_url": "https://www.zoho.com/",
+  "canonical_domain": "www.zoho.com",
+  "http_security_headers": {},
+  "storage_and_cookies": {
+    "cookies": [],
+    "local_storage_keys": [],
+    "session_storage_keys": [],
+    "indexeddb_databases": [],
+    "service_workers_registered": []
+  },
+  "automations_and_profiling": {
+    "total_detected": 1,
+    "detected_automations": [
+      {
+        "vendor_name": "Zoho Marketing Automation / PageSense / SalesIQ",
+        "automation_category": "Marketing & CRM Automation",
+        "matched_signal": "cdn.pagesense.io",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Combines visitor session tracking, heatmap telemetry, and CRM lead scoring.",
+        "advisory_governance_action": "Enable Zoho privacy-Hold mode until explicit Data Principal consent is obtained."
+      }
+    ],
+    "form_signals": {
+      "forms_inspected_count": 0,
+      "pre_ticked_checkboxes_count": 0,
+      "bundled_consent_forms_count": 0,
+      "unencrypted_or_insecure_form_actions": [],
+      "early_field_capture_listeners_detected": false,
+      "observations": [
+        "Inspected 0 HTML form container(s) and detected 0 pre-selected checkbox(es).",
+        "No pre-submission keystroke/field exfiltration listeners detected in inspected scripts."
+      ]
+    },
+    "fingerprinting_signals": {
+      "web_push_permission_requested_on_load": false,
+      "canvas_or_webgl_fingerprint_signals": false,
+      "navigator_beacon_or_fetch_keepalive_observed": false,
+      "details": [
+        "Web Push on-load prompt: Not observed",
+        "Canvas/Audio fingerprinting signatures: Not observed",
+        "Navigator sendBeacon telemetry: Not observed"
+      ]
+    }
+  },
+  "dom_privacy_and_cmp_signals": {
+    "links_count": 15,
+    "buttons_count": 0,
+    "forms_count": 0
+  },
+  "network_and_third_party": {
+    "third_party_domains": []
+  },
+  "cookies": [],
+  "local_storage_keys": [],
+  "session_storage_keys": [],
+  "indexeddb_databases": [],
+  "service_workers_registered": [],
+  "automations": [
+    {
+      "vendor_name": "Zoho Marketing Automation / PageSense / SalesIQ",
+      "automation_category": "Marketing & CRM Automation",
+      "matched_signal": "cdn.pagesense.io",
+      "loaded_before_consent": true,
+      "rule13_2_profiling_or_automated_risk_relevance": "Combines visitor session tracking, heatmap telemetry, and CRM lead scoring.",
+      "advisory_governance_action": "Enable Zoho privacy-Hold mode until explicit Data Principal consent is obtained."
+    }
+  ],
+  "subprocessors": [],
+  "third_party_domains": []
+}

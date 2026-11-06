@@ -1,0 +1,1110 @@
+{
+  "slug": "nykaa",
+  "sector": "Retail & E-Commerce",
+  "entity_label": "Nykaa (Consumer Retail & E-Commerce)",
+  "target_url": "https://www.nykaa.com",
+  "canonical_domain": "www.nykaa.com",
+  "evaluated_at_utc": "2026-11-06T08:34:06.665Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://www.nykaa.com/",
+    "response_time_ms": 1535,
+    "html_bytes": 719364,
+    "security_headers": {
+      "strict_transport_security": "max-age=31536000 ; includeSubDomains ; preload",
+      "content_security_policy": "img-src 'self' data: *.nykaa.com *.naikaa.com fsnecommerce.sc.omtrdc.net evbk.gamooga.com webevbk.gamooga.com www.google-analytics.com www.google.com www.google.co.in www.facebook.com stats.g.doubleclick.net cm.everesttech.net www.googletagmanager.com *.criteo.net *.criteo.com www.youtube.com dpm.demdex.net cm.g.doubleclick.net  www.gstatic.com m.youtube.com maps.googleapis.com maps.gstatic.com cdn-jp.gsecondscreen.com *.googlesyndication.com googleads.g.doubleclick.net d286adtp3hdk00.cloudfront.net;script-src 'self' 'unsafe-inline' 'unsafe-eval' *.nykaa.com *.naikaa.com assets.adobedtm.com www.googletagmanager.com www.google-analytics.com  www.googleadservices.com *.criteo.net *.criteo.com connect.facebook.net cdn-jp.gsecondscreen.com googleads.g.doubleclick.net apis.google.com *.netcoresmartech.com ae.gsecondscreen.com evbk.gamooga.com webevbk.gamooga.com *.speedcurve.com nykaa.verloop.io maps.googleapis.com cdn-ops.verloop.io cdn.speedcurve.com lux.speedcurve.com cdn.nykaaman.com https://11310639.fls.doubleclick.net/activityi googleads.g.doubleclick.net *.googlesyndication.com connect.facebook.net *.clarity.ms traqkar.com cakecdn.com/jssdk/lib.js https://script.mfilterit.net/v3/v/client/web.nykaabeauty.cpv.js accounts.google.com https://www.artfut.com/static/tracking.min.js https://www.artfut.com/static/tagtag.min.js https://www.artfut.com/static/crossdevice.min.js https://ad.admitad.com/tt/ https://cdn.mxpnl.com/libs/mixpanel-js-wrapper.js https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js https://js-agent.newrelic.com https://bam.nr-data.net www.gstatic.com https://www.google.com/recaptcha/api.js http://static.clevertap.com/js/clevertap.min.js https://in1.clevertap-prod.com https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js https://static.zdassets.com https://pod-29.zendesk.com https://bat.bing.com/bat.js https://bat.bing.com/p/action/187147406.js https://s.pinimg.com https://ct.pinterest.com/static/ct/token_create.js;frame-ancestors 'self' ;upgrade-insecure-requests;form-action 'self' ;object-src 'none' ;",
+      "x_frame_options": "sameorigin",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": null,
+      "permissions_policy": null,
+      "server": null,
+      "cf_ray": null,
+      "x_cache": null
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 86,
+    "first_party_count": 86,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 1,
+    "cookies": [
+      {
+        "name": "countryCode",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 0,
+        "set_before_consent": true
+      },
+      {
+        "name": "storeId",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 0,
+        "set_before_consent": true
+      },
+      {
+        "name": "bcookie",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NYKAA_NOW_RAAP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NYKAA_NOW_FILTER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_EMAIL_VERIFICATION_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NEW_SHOPPING_BAG",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_DWEB_SHOPPING_BAG_URL",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ITEM_DISCOUNT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ORDERS_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_LOGIN_SEGMENT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_REORDER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_CP_GAMES",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Analytics & Telemetry",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_SEGMENT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_VIEW_SIMILAR_HLP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_VIEW_SIMILAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_PRODUCT_V3",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_HLP_CARD_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_WISHLIST",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PRICE_REVEAL_NEW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_INLINE_FILTER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_EDD_DELIVERY_WIDGET",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_MULTI_COUPONS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_DWEB_MULTICOUPON",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ADP_RV_SEARCH_BAR_NEW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_AUTH_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_INLINE_WIDGETS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_PINKBOX_CTA",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_QUERY_PARAM_EXP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_CALLOUT_NUDGE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_TOP_NAV_CONFIG",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_QUERY_PARAM_EXP_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_HP_SEARCH_ANIMATION",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PDP_HAMBURGER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AD_BRV",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_ZENDESK_CHAT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_HORIZONTAL_WIDGET_TYPE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_SPECULATIVE_PRERENDERING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_TAGS_RATING_ON_LISTING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_REVIEW_SUBMIT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_OFFER_DELTA_COMMUNICATION",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_NEW_GC_PAGE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_DNW_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_GETAPP_DWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_CONVENIENCE_FEE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CONVERSATION_ROUTE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_SALE_PRICE_TAG",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_DS_AUTH_FLOW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PRODUCT_RACK_CS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_RATING_REVIEW",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_SHOW_ASPECTS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_SEARCHCOUNT_MWEB",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_BP_DN_PERS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PLP_DESIGN_PARITY",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_STICKY_PRICE_V2",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_GROUPING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_DWEB_COLLAPSED_PRICE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CATEGORY_NUDGE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_MINI_PDP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_AGG_FOOTER_SSR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_COUPON_OFFER_REORDER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_PDP_LITE_OFFERS_SSR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HEADER_SUBSTORE_TABS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HYBRID_SUBSTORE_TABS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_LADDER_OFFERS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_TOP_FILTERS_PLP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_FUTURE_COUPONS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HLP_RECO_WIDGETS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_BELOW_FOLD_SECTIONS_SSR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_BEST_SELLER_SEO",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_NEW_USER_OFFER",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_NORTH_STAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_HP_NORTH_STAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PDP_AI_REVIEW_SUMMARY",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_STICKY_PRICE_ON_LOAD",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_ADDRESS_BAR",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_AB_BP_RECO_DN_PERS",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_OVERNIGHT_ALLOCATION",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_CART_SAVINGS_REVAMP",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_PERS_DIFF_PRICING",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_ASK_NYKAA",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_UPDATED_AT",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "EXP_SSR_CACHE",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 365,
+        "set_before_consent": true
+      },
+      {
+        "name": "bm_s",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "Unspecified",
+        "expiry_days": 31,
+        "set_before_consent": true
+      },
+      {
+        "name": "bm_so",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": true,
+        "same_site": "Unspecified",
+        "expiry_days": 1,
+        "set_before_consent": true
+      },
+      {
+        "name": "bm_sz",
+        "domain": "www.nykaa.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": false,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 0.2,
+        "set_before_consent": true
+      }
+    ]
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 22,
+    "script_urls": [
+      "https://asset.nykaa.com/dstatic/ui_components.14953d8ccc.js",
+      "https://asset.nykaa.com/dstatic/vendor.crit2.ba651b4be9.js",
+      "https://asset.nykaa.com/dstatic/vendor.crit1.9e5da7bbcb.js",
+      "https://asset.nykaa.com/dstatic/3371.9ba5742772.js",
+      "https://asset.nykaa.com/dstatic/3686.ddc7bd0883.js",
+      "https://asset.nykaa.com/dstatic/4266.c9505e8900.js",
+      "https://asset.nykaa.com/dstatic/bundle.21383fd283.js",
+      "https://asset.nykaa.com/dstatic/851.2d3b98dc8b.chunk.js",
+      "https://asset.nykaa.com/dstatic/4783.a41003aafa.chunk.js",
+      "https://asset.nykaa.com/dstatic/8439.790c34ae18.chunk.js",
+      "https://asset.nykaa.com/dstatic/2387.0d5cbbf364.chunk.js",
+      "https://asset.nykaa.com/dstatic/502.9712e33427.chunk.js",
+      "https://asset.nykaa.com/dstatic/4098.a24026ebaa.chunk.js",
+      "https://asset.nykaa.com/dstatic/7498.fd689171f6.chunk.js",
+      "https://asset.nykaa.com/dstatic/6043.374cf9c3f6.chunk.js",
+      "https://asset.nykaa.com/dstatic/header.325a09b92c.chunk.js",
+      "https://asset.nykaa.com/dstatic/3352.59d8098394.chunk.js",
+      "https://asset.nykaa.com/dstatic/2505.9acc5a185f.chunk.js",
+      "https://asset.nykaa.com/dstatic/5903.bcdde1ca7a.chunk.js",
+      "https://asset.nykaa.com/dstatic/home.d3b0dea739.chunk.js",
+      "https://www.nykaa.com/ljYj7YaXpihMV/ZtyPwapt3/-iVvc/ENDaNc1i9fb9fz/el0ZAQ/fAc4Olh/Sd2M",
+      "https://www.nykaa.com/ljYj7YaXpihMV/ZtyPwapt3/-iVvc/rmDaNc1i/LigfAQ/SGQOUiB/CcEEa?v=ce93327d-f118-5bab-c0b6-33ffb6dd1741"
+    ],
+    "third_party_domains_count": 1,
+    "third_party_domains": [
+      {
+        "domain": "cdn.naikaa.com",
+        "asset_count": 1,
+        "sample_url": "https://cdn.naikaa.com/"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 6,
+    "marketing_and_crm_automations": [
+      {
+        "vendor_name": "CleverTap / WebEngage / MoEngage",
+        "automation_category": "Marketing & CRM Automation",
+        "matched_signal": "HTTP Response Header match: clevertap.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Performs user segmentation, automated lifecycle triggers, and behavioral cohort profiling subject to Rule 13(2) algorithmic governance.",
+        "advisory_governance_action": "Ensure omnichannel engagement SDKs initialize in opt-out mode by default and log consent provenance for push/email automation."
+      }
+    ],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Tag Manager (GTM)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "DOM/Script signature match: googletagmanager.com/gtm.js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Orchestrates client-side event routing and third-party tag firing; requires consent gating under Section 6 and Rule 3 prior to non-essential telemetry dispatch.",
+        "advisory_governance_action": "Configure Google Tag Manager Consent Mode v2 with default denied state for analytics_storage and ad_storage until affirmative Data Principal consent is recorded."
+      },
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Response Header match: google-analytics.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [
+      {
+        "vendor_name": "Intercom / Freshchat / Zendesk / Drift / Crisp / Yellow.ai / Verloop",
+        "automation_category": "AI Chatbot / Conversational Agent / Support Widget",
+        "matched_signal": "HTTP Response Header match: zdassets.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Processes free-text conversational inputs and automated support triage; directly implicates Section 5 notice and Rule 13(2) algorithmic risk governance.",
+        "advisory_governance_action": "Display a concise pre-chat Section 5 notice snippet clarifying how conversational transcripts are processed and retained."
+      }
+    ],
+    "ad_pixels_and_auto_advanced_matching": [
+      {
+        "vendor_name": "Google Ads / DoubleClick Floodlight",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "HTTP Response Header match: googleadservices.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Tracks advertising conversions and remarketing identifiers across web properties.",
+        "advisory_governance_action": "Block advertising conversion tags prior to explicit opt-in consent and provide one-click withdrawal parity."
+      },
+      {
+        "vendor_name": "LinkedIn Insight Tag / X (Twitter) Pixel / Bing UET",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "HTTP Response Header match: bat.bing.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Associates site visits with social/professional profiles for retargeting cohorts.",
+        "advisory_governance_action": "Require explicit marketing category opt-in before loading social advertising pixels."
+      }
+    ]
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [],
+    "has_reject_or_manage_option_in_dom": false,
+    "forms_inspected_count": 1,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": false
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 1,
+    "privacy_notice_links": [
+      {
+        "url": "https://www.nykaa.com/terms-conditions/lp",
+        "label": "Terms and Conditions"
+      }
+    ],
+    "grievance_links_count": 0,
+    "grievance_links": [],
+    "privacy_policy_passive_check": {
+      "inspected_url": "https://www.nykaa.com/terms-conditions/lp",
+      "status": 200,
+      "grievance_officer_mentioned": false,
+      "dpo_contact_mentioned": false,
+      "ninety_day_sla_mentioned": false,
+      "retention_mentioned": false,
+      "cross_border_mentioned": true,
+      "children_data_mentioned": true
+    }
+  }
+}

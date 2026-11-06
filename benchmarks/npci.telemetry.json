@@ -1,0 +1,133 @@
+{
+  "slug": "npci",
+  "sector": "Digital Public Infrastructure",
+  "entity_label": "NPCI (National Payments Corporation of India)",
+  "target_url": "https://www.npci.org.in",
+  "canonical_domain": "www.npci.org.in",
+  "evaluated_at_utc": "2026-11-06T08:34:09.818Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://www.npci.org.in/",
+    "response_time_ms": 242,
+    "html_bytes": 7108,
+    "security_headers": {
+      "strict_transport_security": "max-age=31536000; includeSubdomains; preload",
+      "content_security_policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.googletagmanager.com https://*.googletagmanager.com https://connect.facebook.net https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google-analytics.com https://ssl.google-analytics.com https://s.go-mpulse.net https://digisaathi.info https://static.zohocdn.com https://*.zohocdn.com https://recruit.zoho.in https://*.zoho.in; script-src-elem 'self' 'unsafe-inline' blob: https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://s.go-mpulse.net https://connect.facebook.net https://www.googleadservices.com https://googleads.g.doubleclick.net https://digisaathi.info https://static.zohocdn.com https://*.zohocdn.com https://recruit.zoho.in https://*.zoho.in; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://static.zohocdn.com https://*.zohocdn.com; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://static.zohocdn.com https://*.zohocdn.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://www.google-analytics.com https://*.google-analytics.com https://www.facebook.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://stats.g.doubleclick.net https://www.google.com https://www.google.co.in https://www.googleadservices.com https://*.akstat.io; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://c.go-mpulse.net https://*.akamaihd.net https://*.akstat.io https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net https://www.facebook.com https://connect.facebook.net https://digisaathi.info https://static.zohocdn.com https://*.zohocdn.com https://recruit.zoho.in https://*.zoho.in https://careers.npci.org.in; media-src 'self'; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://static.zohocdn.com https://*.zohocdn.com https://recruit.zoho.in https://*.zoho.in; worker-src 'self' blob:; manifest-src 'self'; report-uri /csp-report;",
+      "x_frame_options": "SAMEORIGIN",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": "strict-origin-when-cross-origin",
+      "permissions_policy": "geolocation=(), microphone=(), camera=()",
+      "server": null,
+      "cf_ray": null,
+      "x_cache": null
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 1,
+    "first_party_count": 1,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 0,
+    "cookies": [
+      {
+        "name": "AKA_A2",
+        "domain": "npci.org.in",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "Unspecified",
+        "expiry_days": 0,
+        "set_before_consent": true
+      }
+    ]
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 3,
+    "script_urls": [
+      "https://www.googletagmanager.com/gtag/js?id=G-HCGYNL0JL5",
+      "https://www.npci.org.in/static/js/main.7d39c606.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-HCGYNL0JL5"
+    ],
+    "third_party_domains_count": 1,
+    "third_party_domains": [
+      {
+        "domain": "www.googletagmanager.com",
+        "asset_count": 2,
+        "sample_url": "https://www.googletagmanager.com/gtag/js?id=G-HCGYNL0JL5"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 4,
+    "marketing_and_crm_automations": [],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Tag Manager (GTM)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "Script URL: https://www.googletagmanager.com/gtag/js?id=G-HCGYNL0JL5",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Orchestrates client-side event routing and third-party tag firing; requires consent gating under Section 6 and Rule 3 prior to non-essential telemetry dispatch.",
+        "advisory_governance_action": "Configure Google Tag Manager Consent Mode v2 with default denied state for analytics_storage and ad_storage until affirmative Data Principal consent is recorded."
+      },
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "HTTP Response Header match: google-analytics.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": [
+      {
+        "vendor_name": "Meta / Facebook Pixel (fbevents.js)",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "DOM/Script signature match: connect.facebook.net/en_US/fbevents.js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Enables cross-site ad attribution and retargeting audiences; Auto-Advanced Matching can hash DOM form inputs if not restricted.",
+        "advisory_governance_action": "Disable Automatic Advanced Matching by default and block fbevents.js execution until explicit marketing consent is obtained."
+      },
+      {
+        "vendor_name": "Google Ads / DoubleClick Floodlight",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "HTTP Response Header match: googleadservices.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Tracks advertising conversions and remarketing identifiers across web properties.",
+        "advisory_governance_action": "Block advertising conversion tags prior to explicit opt-in consent and provide one-click withdrawal parity."
+      }
+    ]
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [],
+    "has_reject_or_manage_option_in_dom": false,
+    "forms_inspected_count": 0,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": false
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 0,
+    "privacy_notice_links": [],
+    "grievance_links_count": 0,
+    "grievance_links": [],
+    "privacy_policy_passive_check": {
+      "inspected_url": null,
+      "status": null,
+      "grievance_officer_mentioned": false,
+      "dpo_contact_mentioned": false,
+      "ninety_day_sla_mentioned": false,
+      "retention_mentioned": false,
+      "cross_border_mentioned": false,
+      "children_data_mentioned": false
+    }
+  }
+}

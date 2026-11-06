@@ -1,0 +1,160 @@
+{
+  "slug": "practo",
+  "sector": "Healthcare & Clinics",
+  "entity_label": "Practo (Digital Healthcare & Clinic Platform)",
+  "target_url": "https://www.practo.com",
+  "canonical_domain": "www.practo.com",
+  "evaluated_at_utc": "2026-11-06T08:34:09.266Z",
+  "passive_mode_attestation": "100% Read-Only HTTP GET & DOM Inspection (Zero Form Submissions, Zero Authentication Probing)",
+  "http_response": {
+    "ok": true,
+    "status_code": 200,
+    "final_url": "https://www.practo.com/",
+    "response_time_ms": 313,
+    "html_bytes": 91350,
+    "security_headers": {
+      "strict_transport_security": "max-age=63072000; includeSubDomains; preload",
+      "content_security_policy": "frame-ancestors 'self' https://microapps.google.com; report-uri https://www.practo.com/consumer-home/cspreport",
+      "x_frame_options": "SAMEORIGIN",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": null,
+      "permissions_policy": null,
+      "server": null,
+      "cf_ray": null,
+      "x_cache": null
+    }
+  },
+  "cookies_summary": {
+    "total_set_cookie_count": 2,
+    "first_party_count": 2,
+    "third_party_count": 0,
+    "non_essential_pre_consent_count": 0,
+    "cookies": [
+      {
+        "name": "AKA_A2",
+        "domain": "practo.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": true,
+        "same_site": "Unspecified",
+        "expiry_days": 0,
+        "set_before_consent": true
+      },
+      {
+        "name": "ak_bmsc",
+        "domain": "practo.com",
+        "is_third_party": false,
+        "category": "Strictly Necessary / Security",
+        "http_only": true,
+        "secure": false,
+        "same_site": "Unspecified",
+        "expiry_days": 0.1,
+        "set_before_consent": true
+      }
+    ]
+  },
+  "scripts_and_third_parties": {
+    "total_external_scripts": 4,
+    "script_urls": [
+      "https://cdn.speedcurve.com/js/lux.js?id=4565585182",
+      "https://www.practostatic.com/web-assets/home-dweb/javascripts/manifest.d2c3cca4e4a0.js",
+      "https://www.practostatic.com/web-assets/home-dweb/javascripts/vendor.40feb43c7ece.js",
+      "https://www.practostatic.com/web-assets/home-dweb/javascripts/client.5e993b7eb534.js"
+    ],
+    "third_party_domains_count": 2,
+    "third_party_domains": [
+      {
+        "domain": "cdn.speedcurve.com",
+        "asset_count": 1,
+        "sample_url": "https://cdn.speedcurve.com/js/lux.js?id=4565585182"
+      },
+      {
+        "domain": "www.practostatic.com",
+        "asset_count": 3,
+        "sample_url": "https://www.practostatic.com/web-assets/home-dweb/javascripts/manifest.d2c3cca4e4a0.js"
+      }
+    ]
+  },
+  "detected_automations": {
+    "total_automations_detected": 4,
+    "marketing_and_crm_automations": [
+      {
+        "vendor_name": "AppsFlyer / Branch Attribution",
+        "automation_category": "Marketing & CRM Automation",
+        "matched_signal": "DOM/Script signature match: appsflyer.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Links web-to-app acquisition journeys and attribution parameters across devices.",
+        "advisory_governance_action": "Gate cross-device attribution links and deep-linking telemetry behind user consent."
+      }
+    ],
+    "cdp_and_tag_managers": [
+      {
+        "vendor_name": "Google Tag Manager (GTM)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "DOM/Script signature match: googletagmanager.com/gtag/js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Orchestrates client-side event routing and third-party tag firing; requires consent gating under Section 6 and Rule 3 prior to non-essential telemetry dispatch.",
+        "advisory_governance_action": "Configure Google Tag Manager Consent Mode v2 with default denied state for analytics_storage and ad_storage until affirmative Data Principal consent is recorded."
+      },
+      {
+        "vendor_name": "Google Analytics 4 (GA4)",
+        "automation_category": "CDP & Event Routing",
+        "matched_signal": "DOM/Script signature match: google-analytics.com",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Collects pseudonymous client identifiers, pageview sequences, and behavioral engagement metrics relevant to Section 6 consent governance.",
+        "advisory_governance_action": "Gate GA4 initialization behind affirmative opt-in consent and enable IP anonymization and data retention controls aligned with Section 8(7)."
+      }
+    ],
+    "session_replay_and_heatmaps": [],
+    "ai_chatbots_and_support_widgets": [],
+    "ad_pixels_and_auto_advanced_matching": [
+      {
+        "vendor_name": "Meta / Facebook Pixel (fbevents.js)",
+        "automation_category": "Ad Pixel / Auto-Advanced Matching / Retargeting",
+        "matched_signal": "DOM/Script signature match: connect.facebook.net/en_US/fbevents.js",
+        "loaded_before_consent": true,
+        "rule13_2_profiling_or_automated_risk_relevance": "Enables cross-site ad attribution and retargeting audiences; Auto-Advanced Matching can hash DOM form inputs if not restricted.",
+        "advisory_governance_action": "Disable Automatic Advanced Matching by default and block fbevents.js execution until explicit marketing consent is obtained."
+      }
+    ]
+  },
+  "consent_and_dark_pattern_signals": {
+    "detected_cmps": [],
+    "has_reject_or_manage_option_in_dom": false,
+    "forms_inspected_count": 0,
+    "checkboxes_inspected_count": 0,
+    "pre_ticked_checkboxes_count": 0,
+    "insecure_form_actions": []
+  },
+  "fingerprinting_and_background_signals": {
+    "web_push_permission_requested_on_load": false,
+    "canvas_or_webgl_fingerprint_signals": false,
+    "navigator_beacon_or_fetch_keepalive_observed": false
+  },
+  "notice_and_grievance_signals": {
+    "privacy_notice_links_count": 2,
+    "privacy_notice_links": [
+      {
+        "url": "https://www.practo.com/company/privacy",
+        "label": "Privacy Policy"
+      },
+      {
+        "url": "https://www.practo.com/company/terms",
+        "label": "Terms &amp; Conditions"
+      }
+    ],
+    "grievance_links_count": 0,
+    "grievance_links": [],
+    "privacy_policy_passive_check": {
+      "inspected_url": "https://www.practo.com/company/privacy",
+      "status": 200,
+      "grievance_officer_mentioned": false,
+      "dpo_contact_mentioned": false,
+      "ninety_day_sla_mentioned": false,
+      "retention_mentioned": false,
+      "cross_border_mentioned": false,
+      "children_data_mentioned": false
+    }
+  }
+}
